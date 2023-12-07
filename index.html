@@ -15,59 +15,580 @@
 </head>
 
 <body>
-    Добавил строку
+    
     <div class="h-screen grid grid-rows-[auto_1fr_auto]">
-        <header class="z-10 w-full md-28 transition-colors">
-            <div class="container gap-5 items-center justify-between hidden md:flex md:pt-2">
-                <img loading="lazy" src="./src/img/logo.jpg" width="147" height="46" alt="лого">
-                <ul class="flex gap-2 flex-wrap text-main-black">
-                    <li class="mr-4"><a class="nav-link" href="#" data-goto=".page-section-1">О нас</a></li>
-                    <li class="mr-4"><a class="nav-link" href="#" data-goto=".page-section-2">Фото и видео</a></li>
-                    <li class="mr-4"><a class="nav-link" href="#" data-goto=".page-section-3">Прайс-лист</a></li>
-                    <li class="mr-4"><a class="nav-link" href="#" data-goto=".page-section-4">Отзывы</a></li>
-                    <li class="mr-4"><a class="nav-link" href="#" data-goto=".page-section-5">Контакты</a></li>
-                </ul>
-            </div>
+        <header class="border-b-8 z-10 w-full md-28 transition-colors bg-black">
+            <div class="container md:gap-5 items-center justify-between flex md:pt-2">
 
-            <!-- мобильное меню -->
-            <div class="flex flex-col items-start justify-between pt-20 overflow-hidden md:hidden">
-                <img loading="lazy" class="absolute top-5 left-5" src="./src/img/logo.jpg" width="147" height="46"
-                    alt="лого">
-                <div class="mobile-menu bg-green">
-                    <ul class="flex flex-col pb-11 text-main-black pt-4">
-                        <li class="px-4 mb-4"><a class="nav-link" href="#" data-goto=".page-section-1">ссылка 1</a>
-                        </li>
-                        <li class="px-4 mb-4"><a class="nav-link" href="#" data-goto=".page-section-2">ссылка 2</a>
-                        </li>
-                        <li class="px-4 mb-4"><a class="nav-link" href="#" data-goto=".page-section-3">ссылка 3</a>
-                        </li>
-                        <li class="px-4 mb-4"><a class="nav-link" href="#" data-goto=".page-section-4">ссылка 4</a></li>
-                    </ul>
+                <div class="flex items-center justify-center">
+                        <!-- Меню кнопка -->
+                        <button class="btn__menu rounded-xl shadow-md shadow-main-black items-center gap-10 md:flex hidden">
+                            
+                                <svg viewBox="0 0 64 48">
+                                    <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                                    <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                                    <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                                </svg>
+                            
+                            
+                                <!-- <span class="text-white ">Каталог</span> -->
+                            
+                        </button>
+                        
+                        <div class="menu overflow-hidden ">
+                            <ul class="flex flex-col text-white">
+                                <li class="px-4 mb-4"><a class=" hover:text-green transition-colors nav-link"
+                                        href="#" data-goto="page-section-1">Авто с аукционов Японии</a>
+                                </li>
+                                <li class="px-4 mb-4"><a class=" hover:text-green transition-colors nav-link"
+                                        href="#" data-goto="page-section-2">Авто из Кореи</a></li>
+                                <li class="px-4 mb-4"><a class=" hover:text-green transition-colors nav-link"
+                                        href="#" data-goto="page-section-3">Популярные авто</a></li>
+        
+                                <li class="px-4 mb-4"><a class=" hover:text-green transition-colors nav-link"
+                                        href="#" data-goto="page-section-4">Авто в наличии</a></li>
+        
+
+                            </ul>
+                        </div>
+
+                        <!-- Мобильная кнопка -->
+                        <button class="btn__menu--mobile bg-red rounded-xl shadow-md shadow-main-black items-center gap-10 md:hidden flex">
+                            
+                                <svg viewBox="0 0 64 48">
+                                    <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                                    <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                                    <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                                </svg>                                                   
+                        </button>
+
+                        <div class="mobile-menu ">
+                            <ul class="flex flex-col text-white">
+                                <li class="px-4 mb-4"><a class=" hover:text-green transition-colors nav-link"
+                                        href="#" data-goto="page-section-1">1</a>
+                                </li>
+                                <li class="px-4 mb-4"><a class=" hover:text-green transition-colors nav-link"
+                                        href="#" data-goto="page-section-2">2</a></li>
+                                <li class="px-4 mb-4"><a class=" hover:text-green transition-colors nav-link"
+                                        href="#" data-goto="page-section-3">3</a></li>
+        
+                                <li class="px-4 mb-4"><a class=" hover:text-green transition-colors nav-link"
+                                        href="#" data-goto="page-section-4">Авто в наличии</a></li>
+        
+
+                            </ul>
+                        </div>
+
+                    
+                        <ul class="gap-2 pl-10 hidden md:flex">
+                            <li class="mr-2"><a class="text-white hover:text-red transition-colors nav-link" href="#"
+                                data-goto=".page-section-1">О компании</a></li>
+                            <li class="mr-2"><a class="text-white hover:text-red transition-colors nav-link" href="#"
+                                data-goto=".page-section-2">Отзывы</a></li>
+                            <li class="mr-2"><a class="text-white hover:text-red transition-colors nav-link" href="#">Доставка</a></li>
+                        </ul>
+
+
                 </div>
+                <span class="md:w-[250px] md:h-[70px] w-[100px] h-[100px]"><img src="./src/img/logo.svg" alt=""></span>
+                
+                <ul class="mobile gap-2 flex-wrap text-main-black hidden md:flex items-center justify-center">
+                    <li class="mr-4"><a class="text-white hover:text-red transition-colors nav-link" href="#"
+                            data-goto=".page-section-4">Выполненные заказы</a></li>
+                    <li class="mr-4"><a class="text-white hover:text-red transition-colors nav-link" href="#"
+                            data-goto=".page-section-5">Контакты</a></li>
+                    <li class="mr-4"><a class="text-main-black hover:bg-red transition-colors nav-link" href="#"
+                            data-goto=""><img src="./src/img/icons/sap.svg" alt="" ></a></li>
+                    <li class="mr-4"><a class="text-main-black hover:bg-red transition-colors nav-link" href="#"
+                            data-goto=""><img src="./src/img/icons/tg.svg" alt="" ></a></li>
+                    <li class="mr-4"><a class="text-white hover:bg-red transition-colors nav-link p-5" href="#"
+                            data-goto="">Заказать авто</a></li>
+                    
+                </ul>
 
-                <button class="btn-close-menu md:hidden absolute top-5 right-5">
-                    <svg viewBox="0 0 64 48">
-                        <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
-                        <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
-                        <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
-                    </svg>
-                </button>
+                
             </div>
         </header>
 
         <main>
-            <h1 class="visually-hidden">Скрытый заголовое</h1>
+            <h1 class="visually-hidden">Скрытый заголовок</h1>
+
+            <section class="mb-96">
+                <div class="relative">
+                    <div class="relative">
+                        <img class="absolute top-0 right-0 -z-10 md:h-auto" src="./src/img/main/bg-slide1.png" alt="" >
+                        <img class="absolute top-1/2 right-0 -z-10 md:w-96 w-48" src="./src/img/main/japan.png" alt="" >
+                        <img class="absolute top-1/2 right-0 z-20 md:w-[1130px] w-96" src="./src/img/main/oblaco.svg" alt="" >
+                    </div>
+                </div>
+                <div class="container text-5xl md:text-9xl pt-24">
+
+                    <h2 class="text-center text-white z-10 font-normal md:text-6xl text-xl uppercase">
+                        Автомобили <span class="text-yellow">из кореи</span> с доставкой во владивосток
+                    </h2>
+                    <p class="pt-10 z-10 text-center font-bold md:text-xl text-base text-white">Подберем под Ваш бюджет, привезем в РФ, растаможим, оформим документы и доставим до Вас</p>
+                    <div class="relative">
+                        <img class="absolute right-0 z-10" src="./src/img/main/slide1.png" alt="" >
+                    </div>
+
+                    <div class="absolute right-0 bottom-0">
+                        <div class="flex flex-col items-center mb-2 bg-bg-gray bg-opacity-50 rounded-md p-2" > 
+                            <img src="./src/img/icons/online.svg" alt="" >
+                            <p class="text-white md:text-base text-xs">Аукцион-онлайн</p>
+                        </div>
+    
+                        <div class="flex flex-col items-center bg-bg-gray bg-opacity-50 rounded-md p-2">   
+                            <img src="./src/img/icons/chat.svg" alt="" >
+                            <p class="text-white md:text-base text-xs">Онлайн-чат</p>
+                        </div>
+                    </div>
+     
+                </div>
+            </section>
+
+            <section class="japan-swiper pt-96">
+                <div class="container">
+
+                    <div class="flex items-center justify-between">
+                        <div>
+                           <h2 class="text-xl lg:text-6xl text-jost font-extrabold line uppercase relative">сейчас на аукционах японии </h2>
+                       </div>
+   
+                       <div class="swiper-pagination"></div>
+                       <div>
+                           <button
+                               class="japan-prev rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               <img src="./src/img/icons/arrow_prev.svg" alt="влево">
+                           </button>
+                           <button
+                               class="japan-next rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               <img src="./src/img/icons/arrow_next.svg" alt="вправо" >
+                           </button>
+                       </div>
+                       
+                   </div>
+                    <div class="japan-wrapper overflow-hidden">
+                        <div class="japan-item">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide p-5">
+                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                        <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
+                                            <img class="" src="./src/img/cars/car1.png" alt="вправо" >
+                                        </a>
+                                        <div class="flex flex-col items-center md:items-start">
+                                            <div>TOYOTA AQUA</div>
+                                            <div class="flex flex-col md:flex-row">
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/speed.svg" alt="" >
+                                                    <p class="pr-2">2.0, АКПП, 92 000 км.</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="pr-2">grey</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="pr-2">2012 год</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col md:flex-row items-center justify-around">
+                                                <div>
+                                                    <p>937 061 ₽ (673 000 ¥)</p>
+                                                </div>
+                                                <div>
+                                                    <button>Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>       
+                                <div class="swiper-slide p-5">
+                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                        <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
+                                            <img class="" src="./src/img/cars/car2.png" alt="вправо" >
+                                        </a>
+                                        <div class="flex flex-col items-center md:items-start">
+                                            <div>TOYOTA AQUA</div>
+                                            <div class="flex flex-col md:flex-row">
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/speed.svg" alt="" >
+                                                    <p class="pr-2">2.0, АКПП, 92 000 км.</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="pr-2">grey</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="pr-2">2012 год</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col md:flex-row items-center justify-around">
+                                                <div>
+                                                    <p>937 061 ₽ (673 000 ¥)</p>
+                                                </div>
+                                                <div>
+                                                    <button>Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>       
+                                <div class="swiper-slide p-5">
+                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                        <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
+                                            <img class="" src="./src/img/cars/car3.png" alt="вправо" >
+                                        </a>
+                                        <div class="flex flex-col items-center md:items-start">
+                                            <div>TOYOTA AQUA</div>
+                                            <div class="flex flex-col md:flex-row">
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/speed.svg" alt="" >
+                                                    <p class="pr-2">2.0, АКПП, 92 000 км.</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="pr-2">grey</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="pr-2">2012 год</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col md:flex-row items-center justify-around">
+                                                <div>
+                                                    <p>937 061 ₽ (673 000 ¥)</p>
+                                                </div>
+                                                <div>
+                                                    <button>Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+            </section>
+            <section class="korea-swiper pt-40">
+                <div class="container">
+
+                    <div class="flex items-center justify-between">
+                        <div>
+                           <h2 class="text-xl lg:text-6xl text-jost font-extrabold line uppercase relative">Автомобили из Кореи </h2>
+                       </div>
+   
+                       <div class="swiper-pagination"></div>
+                       <div>
+                           <button
+                               class="korea-prev rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               <img src="./src/img/icons/arrow_prev.svg" alt="влево" >
+                           </button>
+                           <button
+                               class="korea-next rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               <img src="./src/img/icons/arrow_next.svg" alt="вправо" >
+                           </button>
+                       </div>
+                       
+                   </div>
+                    <div class="korea-wrapper overflow-hidden">
+                        <div class="korea-item">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide p-5">
+                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                        <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
+                                            <img class="" src="./src/img/cars/car1.png" alt="вправо" >
+                                        </a>
+                                        <div class="flex flex-col items-center md:items-start">
+                                            <div>TOYOTA AQUA</div>
+                                            <div class="flex flex-col md:flex-row">
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/speed.svg" alt="" >
+                                                    <p class="pr-2">2.0, АКПП, 92 000 км.</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="pr-2">grey</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="pr-2">2012 год</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col md:flex-row items-center justify-around">
+                                                <div>
+                                                    <p>937 061 ₽ (673 000 ¥)</p>
+                                                </div>
+                                                <div>
+                                                    <button>Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>       
+                                <div class="swiper-slide p-5">
+                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                        <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
+                                            <img class="" src="./src/img/cars/car2.png" alt="вправо" >
+                                        </a>
+                                        <div class="flex flex-col items-center md:items-start">
+                                            <div>TOYOTA AQUA</div>
+                                            <div class="flex flex-col md:flex-row">
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/speed.svg" alt="" >
+                                                    <p class="pr-2">2.0, АКПП, 92 000 км.</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="pr-2">grey</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="pr-2">2012 год</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col md:flex-row items-center justify-around">
+                                                <div>
+                                                    <p>937 061 ₽ (673 000 ¥)</p>
+                                                </div>
+                                                <div>
+                                                    <button>Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>       
+                                <div class="swiper-slide p-5">
+                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                        <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
+                                            <img class="" src="./src/img/cars/car3.png" alt="вправо" >
+                                        </a>
+                                        <div class="flex flex-col items-center md:items-start">
+                                            <div>TOYOTA AQUA</div>
+                                            <div class="flex flex-col md:flex-row">
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/speed.svg" alt="" >
+                                                    <p class="pr-2">2.0, АКПП, 92 000 км.</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="pr-2">grey</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="pr-2">2012 год</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col md:flex-row items-center justify-around">
+                                                <div>
+                                                    <p>937 061 ₽ (673 000 ¥)</p>
+                                                </div>
+                                                <div>
+                                                    <button>Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+            </section>
+            <section class="stock-swiper pt-40">
+                <div class="container">
+
+                    <div class="flex items-center justify-between">
+                        <div>
+                           <h2 class="text-xl lg:text-6xl text-jost font-extrabold line uppercase relative">автомобили в наличии </h2>
+                       </div>
+   
+                       <div class="swiper-pagination"></div>
+                       <div>
+                           <button
+                               class="stock-prev rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               <img src="./src/img/icons/arrow_prev.svg" alt="влево" >
+                           </button>
+                           <button
+                               class="stock-next rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               <img src="./src/img/icons/arrow_next.svg" alt="вправо" >
+                           </button>
+                       </div>
+                       
+                   </div>
+                    <div class="stock-wrapper overflow-hidden">
+                        <div class="stock-item">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide p-5">
+                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                        <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
+                                            <img class="" src="./src/img/cars/car1.png" alt="вправо" >
+                                        </a>
+                                        <div class="flex flex-col items-center md:items-start">
+                                            <div>TOYOTA AQUA</div>
+                                            <div class="flex flex-col md:flex-row">
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/speed.svg" alt="" >
+                                                    <p class="pr-2">2.0, АКПП, 92 000 км.</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="pr-2">grey</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="pr-2">2012 год</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col md:flex-row items-center justify-around">
+                                                <div>
+                                                    <p>937 061 ₽ (673 000 ¥)</p>
+                                                </div>
+                                                <div>
+                                                    <button>Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>       
+                                <div class="swiper-slide p-5">
+                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                        <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
+                                            <img class="" src="./src/img/cars/car2.png" alt="вправо" >
+                                        </a>
+                                        <div class="flex flex-col items-center md:items-start">
+                                            <div>TOYOTA AQUA</div>
+                                            <div class="flex flex-col md:flex-row">
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/speed.svg" alt="" >
+                                                    <p class="pr-2">2.0, АКПП, 92 000 км.</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="pr-2">grey</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="pr-2">2012 год</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col md:flex-row items-center justify-around">
+                                                <div>
+                                                    <p>937 061 ₽ (673 000 ¥)</p>
+                                                </div>
+                                                <div>
+                                                    <button>Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>       
+                                <div class="swiper-slide p-5">
+                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                        <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
+                                            <img class="" src="./src/img/cars/car3.png" alt="вправо" >
+                                        </a>
+                                        <div class="flex flex-col items-center md:items-start">
+                                            <div>TOYOTA AQUA</div>
+                                            <div class="flex flex-col md:flex-row">
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/speed.svg" alt="" >
+                                                    <p class="pr-2">2.0, АКПП, 92 000 км.</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="pr-2">grey</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="pr-2">2012 год</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col md:flex-row items-center justify-around">
+                                                <div>
+                                                    <p>937 061 ₽ (673 000 ¥)</p>
+                                                </div>
+                                                <div>
+                                                    <button>Заказать</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+            </section>
+
+            <section class="bg-black w-full">
+                <div class="container">
+                    <div class="bg-bg-gray opacity-60 w-96 h-96 m-auto p-40">
+                        <h3 class="text-white">
+                            Получить расчет автомобиля бесплатно
+                        </h3>
+                        <form>
+
+                        </form>
+                    </div>
+                </div>
 
 
+            </section>
+
+            
         </main>
 
-        <footer class="py-12 wow fadeInUp">
-            <h2 class="visually-hidden">Контакты</h2>
-            <div class="container">
-                <div class="flex items-center justify-between flex-col sm:flex-row">
-                    <!-- <p class="mb-3">Политика конфиденциальности</p> -->
-                    <a class="hover:text-blue transition-colors mb-3" href="http://inside360.ru" target="_blank">Сделано
-                        в INSIDE360</a>
+     <footer class="footer page-section-3 md:pt-32 pt-10 mt-auto bg-black">
+            <div class="container flex text-white">
+                <div class="container flex md:justify-between justify-evenly md:flex-nowrap flex-wrap">
+                    <div class="mb-0 md:block flex justify-center md:flex-nowrap flex-wrap">
+                        <div class="flex items-start justify-start md:ml-0 -ml-20">
+                            <div class="flex">
+                                <a href="#"><img loading="lazy" src="./src/img/logo.svg" width="137" height="42" alt="лого"></a>
+                                <h2 class="md:text-2xl sm:text-base font-extrabold text-main-black p-2">
+                                    DMC <span class="text-pink">SHOP</span><br> AND <span class="text-green">CAFE</span>
+                                </h2>
+                            </div>
+                        </div>
+                      </div>
+                    
+                    
+                    <ul class="grid grid-cols-2 mb-4 md:mt-0 mt-5">
+                        <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Авто с аукционов Японии</a></li>
+                        <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Авто с аукционов Кореи</a></li>
+                        <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Мероприятия</a></li>
+                        <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Авто в наличии</a></li>
+                        <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Сейчас на аукционах</a></li>
+                        <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Предзаказ</a></li>
+                        <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Пользовательское соглашение</a></li>
+
+                        <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Политика конфиденциальности</a></li>
+                    </ul>
+
+                    <div class="flex flex-row md:flex-col justify-between md:gap-0 gap-12">
+                        <a class="header-call-button block w-full mx-3" href="#">
+                            <img src="./src/img/socials/Vector.svg" class="bg-pink p-2 rounded-lg shadow-md shadow-main-black mb-4" />
+                        </a>
+                        <ul>
+                            <li><a class="text-sm text-main-black mb-5 block transition hover:text-green font-semibold"
+                                    href="tel:+78005553535">
+                                    +7 (999) 999-99-99</a></li>
+                            <li><a class="text-sm text-main-black mb-5 block transition hover:text-green font-semibold"
+                                    href="tel:+78005553535">
+                                    +7 (999) 999-99-99</a></li>
+                            <li><a class="text-sm text-main-black mb-5 block transition hover:text-green font-semibold"
+                                    href="mailto:info@urgent-cleaner.com">dmc_shop@mail.ru</a></li>
+                            <li>
+                                <a href="https://yandex.ru/maps/org/dms_k_pop/20433094477/?ll=131.908135%2C43.115424&z=14.66">
+                                    <p class="text-sm text-green mb-4 decoration-green"><a href="#">Посмотреть на карте</a></p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+
                 </div>
             </div>
         </footer>

@@ -45,22 +45,9 @@
 
 /* Директивы классов */
 
-.header-call-button {
-    @apply py-3 px-8 bg-main-black font-bodyFont uppercase rounded-xl text-white w-44 text-center border-solid border-main-black border-[2px] transition-all block;
-}
 
-.header-call-button:hover {
-    background-color: transparent;
-    color: #262626;
-}
 
-.popup-link {
-    @apply block py-3 text-2xl font-bodyFont uppercase px-8 bg-green rounded-lg text-center border-solid border-green border-[2px] transition-all relative z-[1] hover:bg-transparent;
-}
 
-.nav-link {
-    @apply text-lg font-bodyFont uppercase hover:text-blue transition-colors;
-}
 
 /* Прочие классы */
 
