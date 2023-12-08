@@ -3,6 +3,13 @@ import { initSlider } from "./module/sliders.js";
 import { initCurrentYear } from "./module/current-year.js";
 import { initScrollToTop } from "./module/scroll-to-top.js";
 import { initScroll } from "./module/scroll.js";
+import { initJapanSlider } from "./module/japan-slider.js";
+import { initKoreaSlider } from "./module/korea-slider.js";
+import { initStockSlider } from "./module/stock-slider.js";
+import { initReviewsSlider } from "./module/reviews-slider.js";
+import { initMainSlider } from "./module/main-slider.js";
+import { initCounterAnimation } from "./module/counter-animation.js";
+
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('подключен скрипт main.js');
@@ -13,6 +20,11 @@ window.addEventListener('DOMContentLoaded', () => {
     initScrollToTop();
     initScroll();
     baguetteBox.run('.gallery-wrapper');
+    initJapanSlider();
+    initKoreaSlider();
+    initStockSlider();
+    initReviewsSlider();
+    initCounterAnimation();
+    initMainSlider();
 
-    // DOMContentLoaded
 });

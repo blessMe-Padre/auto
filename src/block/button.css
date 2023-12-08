@@ -14,3 +14,20 @@
     background-color: #5278DA;
     color: #ffffff;
 }
+
+.up::before {
+    content: "";
+    position: absolute;
+    background: rgb(255, 0, 0);
+    transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .up:hover::before {
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+  }
