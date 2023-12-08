@@ -1,23 +1,24 @@
-export const initMainSlider = () => {
+export const initReviewsSlider = () => {
     const itemSlider = function () {
-        const item = document.querySelector('.main-item');
-        console.log('Я тут')
+        const item = document.querySelector('.review-item');
         let swiper;
+        console.log('Подключился')
         if (item) {
+            
             swiper = new Swiper(item, {
-                // loop: true,
+                loop: true,
                 autoplay: {
                     delay: 3000
                 },
-                direction: 'vertical',
+                direction: 'horizontal',
                 spaceBetween: 15,
-                slidesPerView: 1,
+                slidesPerView: 3,
                 equalHeight: true,
 
                 // If we need pagination
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
+                navigation: {
+                    nextEl: ".review-next",
+                    prevEl: ".review-prev",
                 },
                 breakpoints: {
                     320: {

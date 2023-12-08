@@ -16,13 +16,13 @@
 
 <body>
     
-    <div class="h-screen grid grid-rows-[auto_1fr_auto]">
+    <div class="">
         <header class="border-b-8 z-10 w-full md-28 transition-colors bg-black">
             <div class="container md:gap-5 items-center justify-between flex md:pt-2">
 
                 <div class="flex items-center justify-center">
                         <!-- Меню кнопка -->
-                        <button class="btn__menu rounded-xl shadow-md shadow-main-black items-center gap-10 md:flex hidden">
+                        <button class="btn__menu up rounded-xl shadow-md shadow-main-black items-center gap-10 md:flex hidden">
                             
                                 <svg viewBox="0 0 64 48">
                                     <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
@@ -53,7 +53,7 @@
                         </div>
 
                         <!-- Мобильная кнопка -->
-                        <button class="btn__menu--mobile bg-red rounded-xl shadow-md shadow-main-black items-center gap-10 md:hidden flex">
+                        <button class="btn__menu--mobile up bg-red rounded-xl shadow-md shadow-main-black items-center gap-10 md:hidden flex">
                             
                                 <svg viewBox="0 0 64 48">
                                     <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
@@ -84,13 +84,16 @@
                             <li class="mr-2"><a class="text-white hover:text-red transition-colors nav-link" href="#"
                                 data-goto=".page-section-1">О компании</a></li>
                             <li class="mr-2"><a class="text-white hover:text-red transition-colors nav-link" href="#"
+                                data-goto=".page-section-1">О компании</a></li>
+                            <li class="mr-2"><a class="text-white hover:text-red transition-colors nav-link" href="#"
                                 data-goto=".page-section-2">Отзывы</a></li>
                             <li class="mr-2"><a class="text-white hover:text-red transition-colors nav-link" href="#">Доставка</a></li>
                         </ul>
 
 
                 </div>
-                <span class="md:w-[250px] md:h-[70px] w-[100px] h-[100px]"><img src="./src/img/logo.svg" alt=""></span>
+                
+                <img class="m-auto my-10" src="./src/img/logo.svg" alt="Logo">
                 
                 <ul class="mobile gap-2 flex-wrap text-main-black hidden md:flex items-center justify-center">
                     <li class="mr-4"><a class="text-white hover:text-red transition-colors nav-link" href="#"
@@ -113,36 +116,65 @@
         <main>
             <h1 class="visually-hidden">Скрытый заголовок</h1>
 
-            <section class="mb-96">
-                <div class="relative">
-                    <div class="relative">
-                        <img class="absolute top-0 right-0 -z-10 md:h-auto" src="./src/img/main/bg-slide1.png" alt="" >
-                        <img class="absolute top-1/2 right-0 -z-10 md:w-96 w-48" src="./src/img/main/japan.png" alt="" >
-                        <img class="absolute top-1/2 right-0 z-20 md:w-[1130px] w-96" src="./src/img/main/oblaco.svg" alt="" >
-                    </div>
-                </div>
-                <div class="container text-5xl md:text-9xl pt-24">
-
-                    <h2 class="text-center text-white z-10 font-normal md:text-6xl text-xl uppercase">
-                        Автомобили <span class="text-yellow">из кореи</span> с доставкой во владивосток
-                    </h2>
-                    <p class="pt-10 z-10 text-center font-bold md:text-xl text-base text-white">Подберем под Ваш бюджет, привезем в РФ, растаможим, оформим документы и доставим до Вас</p>
-                    <div class="relative">
-                        <img class="absolute right-0 z-10" src="./src/img/main/slide1.png" alt="" >
-                    </div>
-
-                    <div class="absolute right-0 bottom-0">
-                        <div class="flex flex-col items-center mb-2 bg-bg-gray bg-opacity-50 rounded-md p-2" > 
-                            <img src="./src/img/icons/online.svg" alt="" >
-                            <p class="text-white md:text-base text-xs">Аукцион-онлайн</p>
-                        </div>
-    
-                        <div class="flex flex-col items-center bg-bg-gray bg-opacity-50 rounded-md p-2">   
-                            <img src="./src/img/icons/chat.svg" alt="" >
-                            <p class="text-white md:text-base text-xs">Онлайн-чат</p>
-                        </div>
-                    </div>
+            <section class="mb-96 main-swiper">
+                <div class="main-wrapper">
+                    <div class="main-item">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="relative">
+                                    <img class="absolute top-0 right-0 z-[-10] md:h-auto" src="./src/img/main/bg-slide1.png" alt="">
+                                    <img class="absolute top-1/2 right-0 z-[-10] md:w-96 w-48" src="./src/img/main/japan.png" alt="">
+                                    <img class="absolute top-1/2 right-0 z-20 md:w-[1130px] w-96" src="./src/img/main/oblaco.svg" alt="">
+                                </div>
+                                <div class="container text-5xl md:text-9xl pt-24 relative">
+                                    <h2 class="text-center text-white z-10 font-normal md:text-6xl text-xl uppercase">
+                                        Автомобили <span class="text-yellow">из кореи</span> с доставкой во владивосток
+                                    </h2>
+                                    <p class="pt-10 z-10 text-center font-bold md:text-xl text-base text-white">Подберем под Ваш бюджет, привезем в РФ, растаможим, оформим документы и доставим до Вас</p>
+                                    <div class="relative">
+                                        <img class="absolute right-0 z-10" src="./src/img/main/slide1.png" alt="">
+                                    </div>
+                                    <div class="absolute right-0 bottom-0">
+                                        <div class="flex flex-col items-center mb-2 bg-bg-gray bg-opacity-50 rounded-md p-2">
+                                            <img src="./src/img/icons/online.svg" alt="">
+                                            <p class="text-white md:text-base text-xs">Аукцион-онлайн</p>
+                                        </div>
+                                        <div class="flex flex-col items-center bg-bg-gray bg-opacity-50 rounded-md p-2">
+                                            <img src="./src/img/icons/chat.svg" alt="">
+                                            <p class="text-white md:text-base text-xs">Онлайн-чат</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-slide">
+                                <div class="relative">
+                                    <img class="absolute top-0 right-0 z-[-10] md:h-auto" src="./src/img/main/bg-slide1.png" alt="">
+                                    <img class="absolute top-1/2 right-0 z-[-10] md:w-96 w-48" src="./src/img/main/japan.png" alt="">
+                                    <img class="absolute top-1/2 right-0 z-20 md:w-[1130px] w-96" src="./src/img/main/oblaco.svg" alt="">
+                                </div>
+                                <div class="container text-5xl md:text-9xl pt-24 relative">
+                                    <h2 class="text-center text-white z-10 font-normal md:text-6xl text-xl uppercase">
+                                        Автомобили <span class="text-yellow">из кореи</span> с доставкой во владивосток
+                                    </h2>
+                                    <p class="pt-10 z-10 text-center font-bold md:text-xl text-base text-white">Подберем под Ваш бюджет, привезем в РФ, растаможим, оформим документы и доставим до Вас</p>
+                                    <div class="relative">
+                                        <img class="absolute right-0 z-10" src="./src/img/main/slide1.png" alt="">
+                                    </div>
+                                    <div class="absolute right-0 bottom-0">
+                                        <div class="flex flex-col items-center mb-2 bg-bg-gray bg-opacity-50 rounded-md p-2">
+                                            <img src="./src/img/icons/online.svg" alt="">
+                                            <p class="text-white md:text-base text-xs">Аукцион-онлайн</p>
+                                        </div>
+                                        <div class="flex flex-col items-center bg-bg-gray bg-opacity-50 rounded-md p-2">
+                                            <img src="./src/img/icons/chat.svg" alt="">
+                                            <p class="text-white md:text-base text-xs">Онлайн-чат</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
      
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -157,11 +189,11 @@
                        <div class="swiper-pagination"></div>
                        <div>
                            <button
-                               class="japan-prev rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               class="up japan-prev rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
                                <img src="./src/img/icons/arrow_prev.svg" alt="влево">
                            </button>
                            <button
-                               class="japan-next rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               class="up japan-next rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
                                <img src="./src/img/icons/arrow_next.svg" alt="вправо" >
                            </button>
                        </div>
@@ -196,7 +228,7 @@
                                                     <p>937 061 ₽ (673 000 ¥)</p>
                                                 </div>
                                                 <div>
-                                                    <button>Заказать</button>
+                                                    <button class="up">Заказать</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -228,7 +260,7 @@
                                                     <p>937 061 ₽ (673 000 ¥)</p>
                                                 </div>
                                                 <div>
-                                                    <button>Заказать</button>
+                                                    <button class="up">Заказать</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -260,7 +292,7 @@
                                                     <p>937 061 ₽ (673 000 ¥)</p>
                                                 </div>
                                                 <div>
-                                                    <button>Заказать</button>
+                                                    <button class="up">Заказать</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -270,7 +302,8 @@
                         </div>
                     </div>       
                 </div>
-            </section>
+            </section> 
+
             <section class="korea-swiper pt-40">
                 <div class="container">
 
@@ -282,11 +315,11 @@
                        <div class="swiper-pagination"></div>
                        <div>
                            <button
-                               class="korea-prev rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               class="up korea-prev rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
                                <img src="./src/img/icons/arrow_prev.svg" alt="влево" >
                            </button>
                            <button
-                               class="korea-next rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               class="up korea-next rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
                                <img src="./src/img/icons/arrow_next.svg" alt="вправо" >
                            </button>
                        </div>
@@ -321,7 +354,7 @@
                                                     <p>937 061 ₽ (673 000 ¥)</p>
                                                 </div>
                                                 <div>
-                                                    <button>Заказать</button>
+                                                    <button class="up">Заказать</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -353,7 +386,7 @@
                                                     <p>937 061 ₽ (673 000 ¥)</p>
                                                 </div>
                                                 <div>
-                                                    <button>Заказать</button>
+                                                    <button class="up">Заказать</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -385,7 +418,7 @@
                                                     <p>937 061 ₽ (673 000 ¥)</p>
                                                 </div>
                                                 <div>
-                                                    <button>Заказать</button>
+                                                    <button class="up">Заказать</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -396,7 +429,8 @@
                     </div>       
                 </div>
             </section>
-            <section class="stock-swiper pt-40">
+
+             <section class="stock-swiper pt-40">
                 <div class="container">
 
                     <div class="flex items-center justify-between">
@@ -407,11 +441,11 @@
                        <div class="swiper-pagination"></div>
                        <div>
                            <button
-                               class="stock-prev rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               class="up stock-prev rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
                                <img src="./src/img/icons/arrow_prev.svg" alt="влево" >
                            </button>
                            <button
-                               class="stock-next rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               class="up stock-next rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
                                <img src="./src/img/icons/arrow_next.svg" alt="вправо" >
                            </button>
                        </div>
@@ -446,7 +480,7 @@
                                                     <p>937 061 ₽ (673 000 ¥)</p>
                                                 </div>
                                                 <div>
-                                                    <button>Заказать</button>
+                                                    <button class="up">Заказать</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -478,7 +512,7 @@
                                                     <p>937 061 ₽ (673 000 ¥)</p>
                                                 </div>
                                                 <div>
-                                                    <button>Заказать</button>
+                                                    <button class="up">Заказать</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -510,7 +544,7 @@
                                                     <p>937 061 ₽ (673 000 ¥)</p>
                                                 </div>
                                                 <div>
-                                                    <button>Заказать</button>
+                                                    <button class="up">Заказать</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -521,80 +555,672 @@
                     </div>       
                 </div>
             </section>
-
-            <section class="bg-black w-full">
-                <div class="container">
-                    <div class="bg-bg-gray opacity-60 w-96 h-96 m-auto p-40">
-                        <h3 class="text-white">
-                            Получить расчет автомобиля бесплатно
-                        </h3>
-                        <form>
-
-                        </form>
-                    </div>
-                </div>
-
-
-            </section>
-
             
-        </main>
+            <section class="bg-black w-full relative">
+                <img class="absolute right-0 top-0" src="./src/img/icons/tree.svg" alt="">
+                <div class="container relative">
+                    
+                    <div class="md:p-16 p-4">
+                        <h3 class="text-center text-white font-normal md:text-3xl text-base">
+                            Получить расчет автомобиля бесплатно
+                        </h3>       
 
-     <footer class="footer page-section-3 md:pt-32 pt-10 mt-auto bg-black">
-            <div class="container flex text-white">
-                <div class="container flex md:justify-between justify-evenly md:flex-nowrap flex-wrap">
-                    <div class="mb-0 md:block flex justify-center md:flex-nowrap flex-wrap">
-                        <div class="flex items-start justify-start md:ml-0 -ml-20">
-                            <div class="flex">
-                                <a href="#"><img loading="lazy" src="./src/img/logo.svg" width="137" height="42" alt="лого"></a>
-                                <h2 class="md:text-2xl sm:text-base font-extrabold text-main-black p-2">
-                                    DMC <span class="text-pink">SHOP</span><br> AND <span class="text-green">CAFE</span>
-                                </h2>
+                        
+                        <div class="w-full">
+                            <form class="shadow-md rounded p-10 grid grid-cols-1 md:grid-cols-4 gap-4">
+                                <div class="mb-4">
+                                    <label class="block text-white text-sm font-bold mb-2" for="make">
+                                        Выберите марку
+                                    </label>
+                                    <select id="1" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                        <option>Выберите марку</option>
+                                        <option>Toyota</option>
+                                        <option>Nissan</option>
+                                        <option>Honda</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-white text-sm font-bold mb-2" for="make">
+                                        Выберите модель
+                                    </label>
+                                    <select id="2" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                        <option>Выберите модель</option>
+                                        <option>Toyota</option>
+                                        <option>Nissan</option>
+                                        <option>Honda</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-white text-sm font-bold mb-2" for="make">
+                                        Выберите вид топлива
+                                    </label>
+                                    <select id="3" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                        <option>Выберите вид топлива</option>
+                                        <option>Toyota</option>
+                                        <option>Nissan</option>
+                                        <option>Honda</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-white text-sm font-bold mb-2" for="make">
+                                        Привод
+                                    </label>
+                                    <select id="4" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                        <option>Привод</option>
+                                        <option>Toyota</option>
+                                        <option>Nissan</option>
+                                        <option>Honda</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-white text-sm font-bold mb-2" for="make">
+                                        Трансмиссия
+                                    </label>
+                                    <select id="5" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                        <option>Трансмиссия</option>
+                                        <option>Toyota</option>
+                                        <option>Nissan</option>
+                                        <option>Honda</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-white text-sm font-bold mb-2" for="make">
+                                        Выберите комплектацию 
+                                    </label>
+                                    <select id="6" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                        <option>Выберите комплектацию</option>
+                                        <option>Toyota</option>
+                                        <option>Nissan</option>
+                                        <option>Honda</option>
+                                    </select>
+                                </div>
+
+                                <div class="flex flex-1">
+                                    <div class="mb-4 w-1/2">
+                                        <label class="block text-white text-sm font-bold mb-2" for="make">
+                                            Год 
+                                        </label>
+                                        <select id="7" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                            <option>От</option>
+                                            <option>Toyota</option>
+                                            <option>Nissan</option>
+                                            <option>Honda</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-4 w-1/2">
+                                        <label class="block text-white text-sm font-bold mb-2" for="make">
+                                            Год 
+                                        </label>
+                                        <select id="8" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                            <option>До</option>
+                                            <option>Toyota</option>
+                                            <option>Nissan</option>
+                                            <option>Honda</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex flex-1">
+                                    <div class="mb-4 w-1/2">
+                                        <label class="block text-white text-sm font-bold mb-2" for="make">
+                                            Пробег 
+                                        </label>
+                                        <select id="make" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                            <option>От</option>
+                                            <option>Toyota</option>
+                                            <option>Nissan</option>
+                                            <option>Honda</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-4 w-1/2">
+                                        <label class="block text-white text-sm font-bold mb-2" for="make">
+                                            Пробег 
+                                        </label>
+                                        <select id="9" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                            <option>До</option>
+                                            <option>Toyota</option>
+                                            <option>Nissan</option>
+                                            <option>Honda</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="flex flex-1">
+                                    <div class="mb-4 w-1/2">
+                                        <label class="block text-white text-sm font-bold mb-2" for="make">
+                                            Цена 
+                                        </label>
+                                        <select id="10" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                            <option>От</option>
+                                            <option>Toyota</option>
+                                            <option>Nissan</option>
+                                            <option>Honda</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-4 w-1/2">
+                                        <label class="block text-white text-sm font-bold mb-2" for="make">
+                                            Цена 
+                                        </label>
+                                        <select id="11" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                            <option>До</option>
+                                            <option>Toyota</option>
+                                            <option>Nissan</option>
+                                            <option>Honda</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="flex flex-1">
+                                    <div class="mb-4 w-1/2">
+                                        <label class="block text-white text-sm font-bold mb-2" for="make">
+                                            Объем
+                                        </label>
+                                        <select id="12" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                            <option>От</option>
+                                            <option>Toyota</option>
+                                            <option>Nissan</option>
+                                            <option>Honda</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-4 w-1/2">
+                                        <label class="block text-white text-sm font-bold mb-2" for="make">
+                                            Объем
+                                        </label>
+                                        <select id="13" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                            <option>До</option>
+                                            <option>Toyota</option>
+                                            <option>Nissan</option>
+                                            <option>Honda</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center justify-center">
+                                    <button class="up bg-red py-2 px-10 text-white rounded-lg">
+                                        Получить расчёт
+                                    </button>
+                                </div>
+                               
+                                <div class="flex items-end justify-end">
+                                    <button class="up text-yellow py-2 px-10 underline">
+                                        Сбросить
+                                    </button>
+                                </div>
+
+
+                            </form>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="relative md:flex items-center">
+                        <div class="w-full md:w-1/2">
+                            <h2 class="text-white text-start font-normal md:text-5xl text-xl uppercase pb-10">
+                                О компании
+                            </h2>
+                            <div class="text-white md:text-xl text-sm mb-7">
+                                Компания <span class="text-yellow">«Автопотенциал-ДВ»</span> предоставляет Вам полный спектр профессиональных услуг по покупке автомобилей, транспортировке и таможенному оформлению ТС из Японии, Южной Кореи.  Благодаря многолетнему опыту в автомобильной сфере (с 2010 года) нами было импортировано более 1000 единиц ТС в РФ.
+                            </div>
+                            
+                            <div class="text-white md:text-lg text-sm bg-bg-gray bg-opacity-50 relative md:p-10 md:pr-28 p-5 pr-2">
+                                <span class="font-bold">Наша задача</span> – исключить риски покупки битых, аварийных, ржавых, утопленных автомобилей. Мы работаем только с проверенными и надежными поставщиками Японии и Южной Кореи. При заказе в нашей компании автомобиля для иногородних клиентов мы оказываем дополнительные услуги: детейлинг авто, замена тех.жидкостей, масла, покупка дополнительных фильтров, расходников.
+        
+                                <p class="text-yellow md:text-lg text-xs mt-5">Почему выбирают нас:</p>
+                                <ul class="list-disc text-white md:text-xs p-5">
+                                    <li class="pb-2">
+                                        Индивидуальный подход к каждому клиенту
+                                    </li>
+                                    <li class="pb-2">
+                                        Комфортные условия по дистанционному заказу для клиентов из других регионов РФ
+                                    </li>
+                                    <li class="pb-2">   
+                                        В работе с заказчиками придерживаемся принципа: ответственность, требовательность, честность
+                                    </li>
+                                    <li class="pb-2">
+                                        Ясный и элементарный сервис по приобретению автомобиля  и его таможенного оформления
+                                    </li>
+                                    <li class="pb-2">
+                                        Все платежи Вы производите самостоятельно и за каждый платеж предоставляются отчетные документы
+                                    </li>
+                                    <li class="pb-2">
+                                        Предоставляем полный отчет расходов стоимости авто для Вашего понимания за честную комиссию, без скрытых платежей
+                                    </li>
+                                </ul>
+                                <img class="absolute right-0 top-10" src="./src/img/icons/quot.svg" alt="">
                             </div>
                         </div>
-                      </div>
-                    
-                    
-                    <ul class="grid grid-cols-2 mb-4 md:mt-0 mt-5">
-                        <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Авто с аукционов Японии</a></li>
-                        <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Авто с аукционов Кореи</a></li>
-                        <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Мероприятия</a></li>
-                        <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Авто в наличии</a></li>
-                        <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Сейчас на аукционах</a></li>
-                        <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Предзаказ</a></li>
-                        <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Пользовательское соглашение</a></li>
+                        <img class="md:block hidden absolute -bottom-16 lg:-right-40 md:-right-32 right-0 z-10" src="./src/img/about/car_about.png" alt="" >
+                        <img class="md:hidden block w-full z-10" src="./src/img/about/car_about.png" alt="" >
+                    </div>
+                </div>
+            </section>
 
-                        <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Политика конфиденциальности</a></li>
+            <section class="relative bg-black pt-20 z-0 pb-40">
+                <div class="container relative md:flex items-center">
+                    <img class="bg-cover bg-center opacity-90 absolute md:block hidden -z-10" src="./src/img/company/bg_company.png" alt="">
+                    <div class="md:w-1/2">
+                        <h2 class="text-white font-normal md:text-5xl text-xl uppercase pb-8">
+                            «Автопотенциал-ДВ»
+                        </h2>
+                        <div class="text-white md:text-2xl text-sm mb-7">
+                            предоставляет Вам полный спектр профессиональных услуг по покупке автомобилей, транспортировке и таможенному оформлению ТС из Японии, Южной Кореи
+                        </div>
+                        
+                        <div class="text-white md:text-base text-xs mb-7">
+                            Сотрудники компании «Автопотенциал-Дв» высоко ценят доверие каждого клиента 
+                            к нашей компании и в основу всего ставится заказчик и его интересы
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 relative">
+                        <img class="md:block hidden" src="./src/img/company/people.png" alt="">
+                    </div>
+                </div>
+                <div class="relative md:w-1/2">
+                    <img class="md:hidden block" src="./src/img/company/people.png" alt="">
+                    <img class="bg-cover bg-center opacity-90 absolute bottom-0 md:hidden block -z-10" src="./src/img/company/bg_company.png" alt="">
+                </div>
+                <div class="container">
+                    <ul class="flex items-center justify-center flex-wrap counter-pointer">
+                        <li class="mr-32 mb-10 ml-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="73" height="4" viewBox="0 0 73 4" fill="none">
+                                <path d="M0 2H72.5" stroke="#FCBC40" stroke-width="4"/>
+                            </svg>
+                            <p class="md:text-5xl text-3xl text-yellow uppercase pt-4 pb-4 counter-years">13 </p><span class="md:text-5xl text-3xl text-yellow uppercase pt-4 pb-4">лет</span>
+                            <p class="md:text-xl text-sm text-white">опыт в автомобильной сфере</p>
+                        </li>
+                        <li class="mr-32 mb-10 ml-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="73" height="4" viewBox="0 0 73 4" fill="none">
+                                <path d="M0 2H72.5" stroke="#FCBC40" stroke-width="4"/>
+                            </svg>
+                            <p class="md:text-5xl text-3xl text-yellow uppercase pt-4 pb-4 counter-items">более 1000</p>
+                            <p class="md:text-xl text-sm text-white">единиц ТС в РФ</p>
+                        </li>
+                        <li class="mr-32 mb-10 ml-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="73" height="4" viewBox="0 0 73 4" fill="none">
+                                <path d="M0 2H72.5" stroke="#FCBC40" stroke-width="4"/>
+                            </svg>
+                            <p class="md:text-5xl text-3xl text-yellow uppercase pt-4 pb-4 counter-client">более 8000</p>
+                            <p class="md:text-xl text-sm text-white">довольных клиентов по всей России</p>
+                        </li>
                     </ul>
+                </div>
+            </section>
+        
+            <section class="py-20 overflow-hidden">
+                <div class="container">
+                    <h2 class=" font-normal md:text-5xl text-xl uppercase pb-8">как купить автомобиль</h2>
+                    <div class="pb-10 relative">
+                        <div class="pb-10 flex justify-between items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1444" height="4" viewBox="0 0 1444 4" fill="none">
+                                <path d="M1442 2H2" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 8"/>
+                            </svg>
+                            <svg class="absolute" xmlns="http://www.w3.org/2000/svg" width="700" height="25" viewBox="0 0 25 25" fill="none">
+                                <circle cx="12.5" cy="12.5" r="12.5" fill="#D3D3D3"/>
+                            </svg>
+                            <svg class="absolute" xmlns="http://www.w3.org/2000/svg" width="1400" height="25" viewBox="0 0 25 25" fill="none">
+                                <circle cx="12.5" cy="12.5" r="12.5" fill="#D3D3D3"/>
+                            </svg>
+                            <svg class="absolute" xmlns="http://www.w3.org/2000/svg" width="2100" height="25" viewBox="0 0 25 25" fill="none">
+                                <circle cx="12.5" cy="12.5" r="12.5" fill="#D3D3D3"/>
+                            </svg>
+                            <svg class="absolute" xmlns="http://www.w3.org/2000/svg" width="2800" height="25" viewBox="0 0 25 25" fill="none">
+                                <circle cx="12.5" cy="12.5" r="12.5" fill="#D3D3D3"/>
+                            </svg>
 
-                    <div class="flex flex-row md:flex-col justify-between md:gap-0 gap-12">
-                        <a class="header-call-button block w-full mx-3" href="#">
-                            <img src="./src/img/socials/Vector.svg" class="bg-pink p-2 rounded-lg shadow-md shadow-main-black mb-4" />
-                        </a>
-                        <ul>
-                            <li><a class="text-sm text-main-black mb-5 block transition hover:text-green font-semibold"
-                                    href="tel:+78005553535">
-                                    +7 (999) 999-99-99</a></li>
-                            <li><a class="text-sm text-main-black mb-5 block transition hover:text-green font-semibold"
-                                    href="tel:+78005553535">
-                                    +7 (999) 999-99-99</a></li>
-                            <li><a class="text-sm text-main-black mb-5 block transition hover:text-green font-semibold"
-                                    href="mailto:info@urgent-cleaner.com">dmc_shop@mail.ru</a></li>
-                            <li>
-                                <a href="https://yandex.ru/maps/org/dms_k_pop/20433094477/?ll=131.908135%2C43.115424&z=14.66">
-                                    <p class="text-sm text-green mb-4 decoration-green"><a href="#">Посмотреть на карте</a></p>
+                            <svg class="" xmlns="http://www.w3.org/2000/svg" width="79" height="79" viewBox="0 0 79 79" fill="none">
+                                <g clip-path="url(#clip0_202_4633)">
+                                <path d="M78.6506 42.481C77.7623 39.4088 70.7331 36.707 69.3357 36.1961C67.8364 35.6466 63.9865 34.33 60.2893 33.8454C53.799 30.6696 46.5205 28.4506 46.3818 28.4102C46.2659 28.3857 43.3868 27.7817 35.3499 27.7817C30.0077 27.7817 24.7937 28.8351 20.1942 29.762C17.7855 30.2483 15.5121 30.71 13.4932 30.9593C7.69284 31.6756 3.32502 31.7423 3.28113 31.7423C3.11155 31.7448 2.94651 31.7975 2.80685 31.8937C2.66719 31.99 2.55916 32.1254 2.4964 32.283C2.39282 32.5375 0 38.5626 0 41.3171C0 44.298 4.16067 47.2947 4.63467 47.6283C4.77862 47.7301 4.95067 47.7828 5.12622 47.7828H6.85896C7.50897 48.8312 8.41529 49.6967 9.49246 50.2978C10.5696 50.8989 11.7822 51.2157 13.0157 51.2184C14.2496 51.2165 15.4627 50.9 16.5403 50.2989C17.6179 49.6977 18.5244 48.8318 19.1742 47.7828H54.8558C56.0935 49.8315 58.3213 51.2184 60.8862 51.2184C63.451 51.2184 65.6771 49.8315 66.9183 47.7828H77.8975C78.0798 47.783 78.2574 47.7253 78.4047 47.618C78.5521 47.5107 78.6616 47.3594 78.7174 47.1859C78.7402 47.0981 79.3845 45.0195 78.6506 42.481ZM57.5296 34.4458C55.9009 34.774 54.2492 34.9748 52.5894 35.0462L52.6351 34.962C52.6949 34.8523 52.7304 34.731 52.739 34.6063C52.7476 34.4817 52.7292 34.3567 52.685 34.2398C52.6409 34.1229 52.572 34.017 52.483 33.9292C52.3941 33.8415 52.2873 33.774 52.1698 33.7313L49.5839 32.8167C49.4685 32.7761 49.3457 32.7606 49.2237 32.7712C49.1018 32.7818 48.9836 32.8184 48.8769 32.8784C48.7702 32.9383 48.6775 33.0204 48.6051 33.1191C48.5327 33.2177 48.4821 33.3307 48.4568 33.4504L48.1198 35.0761C43.7397 34.9321 38.8733 34.3475 33.4925 33.6049L35.8502 29.5039C43.1884 29.5285 45.9359 30.0745 45.9552 30.0745C49.8929 31.3116 53.7572 32.771 57.5296 34.4458ZM20.5347 31.4473C24.6076 30.6257 29.1773 29.7445 33.8243 29.5689L31.6527 33.3486L28.7156 32.9325C25.7189 32.5059 22.6607 32.0688 19.4884 31.658L20.5347 31.4473ZM13.0157 49.4997C11.5395 49.4974 10.1245 48.91 9.08064 47.8661C8.03683 46.8223 7.44939 45.4073 7.44707 43.9311C7.44893 42.4549 8.03627 41.0398 9.08024 39.9962C10.1242 38.9525 11.5395 38.3656 13.0157 38.3642C14.4923 38.3647 15.9083 38.9512 16.9528 39.995C17.9972 41.0388 18.5847 42.4545 18.5861 43.9311C18.5837 45.4076 17.9961 46.8229 16.9519 47.8668C15.9077 48.9106 14.4922 49.4979 13.0157 49.4997ZM60.8862 49.4997C59.4688 49.4983 58.11 48.9347 57.1078 47.9325C56.1056 46.9303 55.5419 45.5714 55.5405 44.154C55.5414 42.7366 56.1049 41.3774 57.1072 40.3751C58.1096 39.3728 59.4687 38.8093 60.8862 38.8084C62.3036 38.8093 63.6628 39.3728 64.6651 40.3751C65.6674 41.3774 66.2309 42.7366 66.2318 44.154C66.2295 45.5711 65.6656 46.9294 64.6636 47.9314C63.6616 48.9334 62.3032 49.4974 60.8862 49.4997Z" fill="#202020"/>
+                                <path d="M13.0155 47.4792C14.974 47.4792 16.5617 45.8915 16.5617 43.9329C16.5617 41.9744 14.974 40.3867 13.0155 40.3867C11.0569 40.3867 9.46924 41.9744 9.46924 43.9329C9.46924 45.8915 11.0569 47.4792 13.0155 47.4792Z" fill="#202020"/>
+                                <path d="M60.8861 47.7004C62.8446 47.7004 64.4323 46.1127 64.4323 44.1541C64.4323 42.1956 62.8446 40.6079 60.8861 40.6079C58.9275 40.6079 57.3398 42.1956 57.3398 44.1541C57.3398 46.1127 58.9275 47.7004 60.8861 47.7004Z" fill="#202020"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_202_4633">
+                                <rect width="79" height="79" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex items-stretch justify-center flex-1 flex-wrap gap-7">
+                        <div class="relative bg-bg-how p-7 max-w-xs">
+                            <img class="absolute left-2 top-2" src="./src/img/how_buy/Frame_1.svg" alt="">
+                            <div>
+                                <p class="md:text-base text-sm pt-14 pb-10 font-bold uppercase">
+                                    Оставить заявку на сайте
+                                    или написать на whatsapp
+                                </p>
+
+                                <p class="md:text-base text-xs">
+                                    Мы бесплатно проконсультируем, проссчитаем конечную стоимость автомобиля и предоставим перевод аукционного листа (для Японских автомобилей)
+                                </p>
+                            </div>
+
+                            <div class="flex items-center justify-center pt-10">
+                                <button class="bg-red up py-2 px-10 text-white rounded-lg">
+                                    Оставить заявку
+                                </button>
+                            </div>
+                        </div>
+                        <div class="relative bg-bg-how p-7 max-w-xs">
+                            <img class="absolute left-2 top-2" src="./src/img/how_buy/Frame_2.svg" alt="">
+                            <div>
+                                <p class="md:text-base text-sm pt-14 pb-10 font-bold uppercase">
+                                    Подбор и покупка 
+                                    автомобиля
+                                </p>
+
+                                <p class="md:text-base text-xs">
+                                    Мы подберем для Вас наилучший автомобиль по техническим характеристикам с учетом Ваших требований
+                                </p>
+                            </div>
+
+                            <div class="flex items-center max-h-max justify-center pt-10">
+                                <a class="absolute bottom-6 bg-yellow py-2 px-10 text-white rounded-lg" href="#">
+                                    Скачать договор pdf
                                 </a>
+                            </div>
+                        </div>
+                        <div class="relative bg-bg-how p-7 max-w-xs">
+                            <img class="absolute left-2 top-2" src="./src/img/how_buy/Frame_3.svg" alt="">
+                            <div>
+                                <p class="md:text-base text-sm pt-14 pb-10 font-bold uppercase">
+                                    оплата, перевозка
+                                    и таможенное оформление
+                                </p>
+
+                                <p class="md:text-base text-xs">
+                                    Рассчитаем конечную стоимость автомобиля, транспортируем в порт Владивостока, проведем таможенное оформление, пройдем испытательную лабораторию (для получения СБКТС и ЭПТС, в котором Вы будете первым собственником)
+                                </p>
+                            </div>
+
+                            
+                        </div>
+                        <div class="relative bg-bg-how p-7 max-w-xs">
+                            <img class="absolute left-2 top-2" src="./src/img/how_buy/Frame_4.svg" alt="">
+                            <div>
+                                <p class="md:text-base text-sm pt-14 pb-10 font-bold uppercase">
+                                    выдача, доставка авто
+                                </p>
+
+                                <p class="md:text-base text-xs">
+                                    Отправим автомобиль в любой регион РФ автоперевозчиком или по ЖД вагоном-сеткой
+                                </p>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="review-swiper">
+                <div class="container">
+
+                    <div class="flex items-center justify-between">
+                        <div>
+                           <h2 class="text-xl lg:text-6xl text-jost font-extrabold line uppercase relative">Отзывы клиентов </h2>
+                       </div>
+   
+                       <div class="swiper-pagination"></div>
+                       <div>
+                           <button
+                               class="up review-prev rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               <img src="./src/img/icons/arrow_prev.svg" alt="влево">
+                           </button>
+                           <button
+                               class="up review-next rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               <img src="./src/img/icons/arrow_next.svg" alt="вправо" >
+                           </button>
+                       </div>
+                       
+                   </div>
+                    <div class="review-wrapper overflow-hidden">
+                        <div class="review-item">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide p-5">
+                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                        <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
+                                            <img class="" src="./src/img/review/image_4.png" alt="вправо" >
+                                        </a>
+                                        <div class="flex flex-col items-center md:items-start">
+                                            <div class="font-bold pb-5">BMW 7-series 730 Ld прямиком из Южной Кореи</div>
+                                            <div class="font-bold pb-5">
+                                                Обратился в Автопотенциал что бы приобрести авто из Южной кореи, поиск был не прост много вариантов пересмотрели, и вот нашли отличный вариант 2 месяца и машинка у меня, не маловажный момент по просьбе произвели ТО подготовили автомобиль для поездки до Оренбурга, спасибо Александру!
+                                            </div>
+                                            <div class="flex flex-col md:flex-row pb-5">
+                                                <div class="flex items-center">
+                                                    <p class="pr-2 text-gray">Ренат</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <p class="pr-2 text-gray">10 апреля 2023 г</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <p class="pr-2 text-gray">г. Владивосток</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col md:flex-row items-center justify-around">
+                                                <a href="">
+                                                    <div>
+                                                        <p class="text-yellow">Смотреть оригинал</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>       
+     
+                                <div class="swiper-slide p-5">
+                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                        <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
+                                            <img class="" src="./src/img/review/image_4.png" alt="вправо" >
+                                        </a>
+                                        <div class="flex flex-col items-center md:items-start">
+                                            <div class="font-bold pb-5">BMW 7-series 730 Ld прямиком из Южной Кореи</div>
+                                            <div class="font-bold pb-5">
+                                                Обратился в Автопотенциал что бы приобрести авто из Южной кореи, поиск был не прост много вариантов пересмотрели, и вот нашли отличный вариант 2 месяца и машинка у меня, не маловажный момент по просьбе произвели ТО подготовили автомобиль для поездки до Оренбурга, спасибо Александру!
+                                            </div>
+                                            <div class="flex flex-col md:flex-row pb-5">
+                                                <div class="flex items-center">
+                                                    <p class="pr-2 text-gray">Ренат</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <p class="pr-2 text-gray">10 апреля 2023 г</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <p class="pr-2 text-gray">г. Владивосток</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col md:flex-row items-center justify-around">
+                                                <a href="">
+                                                    <div>
+                                                        <p class="text-yellow">Смотреть оригинал</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>       
+     
+                                <div class="swiper-slide p-5">
+                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                        <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
+                                            <img class="" src="./src/img/review/image_4.png" alt="вправо" >
+                                        </a>
+                                        <div class="flex flex-col items-center md:items-start">
+                                            <div class="font-bold pb-5">BMW 7-series 730 Ld прямиком из Южной Кореи</div>
+                                            <div class="font-bold pb-5">
+                                                Обратился в Автопотенциал что бы приобрести авто из Южной кореи, поиск был не прост много вариантов пересмотрели, и вот нашли отличный вариант 2 месяца и машинка у меня, не маловажный момент по просьбе произвели ТО подготовили автомобиль для поездки до Оренбурга, спасибо Александру!
+                                            </div>
+                                            <div class="flex flex-col md:flex-row pb-5">
+                                                <div class="flex items-center">
+                                                    <p class="pr-2 text-gray">Ренат</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <p class="pr-2 text-gray">10 апреля 2023 г</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <p class="pr-2 text-gray">г. Владивосток</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col md:flex-row items-center justify-around">
+                                                <a href="">
+                                                    <div>
+                                                        <p class="text-yellow">Смотреть оригинал</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>       
+     
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+            </section>
+
+            <section class="pt-20">
+                <div class="container relative">
+                    <div class="flex justify-center">
+                        <img class="bg-cover bg-center opacity-90 absolute bottom-0 -z-10" src="./src/img/map/map.png" alt="" > 
+                        <img class="bg-cover bg-center opacity-90 absolute top-1/3 -z-10" src="./src/img/map/icon.svg" alt="">
+                    </div>
+                    <div class="bg-white max-w-sm ml-10 p-10">
+                        <div class="pb-5">
+                            <h2 class="text-xl lg:text-6xl text-jost font-extrabold line uppercase relative">Контакты </h2>
+                        </div>
+                        <ul>
+                            <li class="pb-8">
+                                <img class="pb-2" src="./src/img/icons_nav/phonw.svg" alt="">
+                                <a href="tel:79020607575">
+                                    +79020607575, +79020605757
+                                </a>
+                            </li>
+                            <li class="pb-8">
+                                <img class="pb-2" src="./src/img/icons_nav/email.svg" alt="">
+                                 Avtopotencial-DV@mail.ru
+                              
+                            </li>
+                            <li class="pb-8">
+                                <img class="pb-2" src="./src/img/icons_nav/geo.svg" alt="">
+                                    г.  Владивосток, ул. Тухачевского 35 , 2 этаж, т/ц Тухачевский
+                            </li>
+                            <li class="pb-8">
+                                <img class="pb-2" src="./src/img/icons_nav/clock.svg" alt="">
+                                    Пн-Пт 9:00-18:00
+                            </li>
+                            <li class="pb-8 flex items-center gap-4">
+                                <img src="./src/img/icons_nav/sap.svg" alt="">
+                                <img src="./src/img/icons_nav/tg.svg" alt="">
+                                <img src="./src/img/icons_nav/vk.svg" alt="">
+                                <img src="./src/img/icons_nav/inst.svg" alt="">
+                                <img src="./src/img/icons_nav/youtube.svg" alt="">
                             </li>
                         </ul>
                     </div>
-                    
-
                 </div>
+            </section>  
+        </main>
+
+        <footer class="footer page-section-3 bg-black pb-10">
+                <img class="m-auto my-10" src="./src/img/logo.svg" alt="Logo">
+            <div class="container flex md:justify-between justify-evenly md:flex-nowrap flex-wrap text-white">
+                <div>
+                    <p class="pb-4">Мы в соц.сетях</p>
+                    <ul class="flex items-center justify-center gap-4">
+                        <li class="pb-8 flex items-center gap-4">
+                            <img src="./src/img/icons_nav/sap.svg" alt="">
+                            <img src="./src/img/icons_nav/tg.svg" alt="">
+                            <img src="./src/img/icons_nav/vk.svg" alt="">
+                            <img src="./src/img/icons_nav/inst.svg" alt="">
+                            <img src="./src/img/icons_nav/youtube.svg" alt="">
+                        </li>  
+                    </ul>
+                </div>
+                <div>
+                    <p class="pb-4">Каталог</p>
+                    <ul class="text-gray md:text-base text-xs">
+                        <li class="pb-8">
+                            Авто с аукционов Японии
+                        </li>  
+                        <li class="pb-8">
+                            Авто с аукционов Кореи
+                        </li>  
+                        <li class="pb-8">
+                            Популярные авто
+                        </li>  
+                        <li class="pb-8">
+                            Авто в наличии
+                        </li>  
+                        <li class="pb-8">
+                            Сейчас на аукционах
+                        </li>  
+                    </ul>
+                </div>
+                <div>
+                    <p class="pb-4">Клиентам</p>
+                    <ul class="text-gray md:text-base text-xs">
+                        <li class="pb-8">
+                            О компании
+                        </li>  
+                        <li class="pb-8">
+                            Отзывы
+                        </li>  
+                        <li class="pb-8">
+                            Доставка
+                        </li>  
+                        <li class="pb-8">
+                            Выполненные заказы
+                        </li>  
+                        <li class="pb-8">
+                            <a href="">
+                                Скачать договор pdf
+                            </a>
+                            
+                        </li>  
+                    </ul>
+                </div>
+                <div>
+                    <p class="pb-4">КОНТАКТЫ</p>
+                    <ul>
+                        <li class="pb-10 pr-8 flex items-center">
+                            <img class="mr-2" src="./src/img/icons_nav/phonw.svg" alt="">
+                            <a href="tel:79020607575">+79020607575, +79020605757</a>
+                        </li>
+                        <li class="pb-10 pr-8 flex items-center">
+                            <img class="mr-2" src="./src/img/icons_nav/email.svg" alt="">
+                            <a href="mailto:Avtopotencial-DV@mail.ru">Avtopotencial-DV@mail.ru</a>
+                        </li>
+                        <li class="pb-10  pr-8 flex items-center max-w-xs">
+                            <img class="mr-2" src="./src/img/icons_nav/geo.svg" alt="">
+                            <p>г.  Владивосток, ул. Тухачевского 35 , 2 этаж, т/ц Тухачевский</p>
+                        </li>
+                        <li class="pb-10 flex items-center">
+                            <img class="mr-2" src="./src/img/icons_nav/clock.svg" alt="">
+                            <p>Пн-Пт 9:00-18:00</p>
+                        </li>
+                        
+                        <li class="">
+                            <button class="bg-red up py-2 px-10 text-white rounded-lg">
+                                Заказать авто
+                            </button>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+
+            <div class="container">
+                <div class="flex items-center justify-between text-gray pt-10">
+                    <div class="md:text-sm text-xs">
+                        Компания «Автопотенциал-ДВ»
+                    </div>
+                    <a href="" class="md:text-sm text-xs underline">
+                        Политика конфиденциальности
+                    </a>
+                    </div>    
+                </div> 
             </div>
         </footer>
-    </div>
     <div class="scroll-top">
-        <img src="./src/img/up-arrow.svg" alt="стрелка вверх">
+        <img src="./src/img/" alt="стрелка вверх">
     </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/wow.js"></script>

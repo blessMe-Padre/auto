@@ -18,7 +18,10 @@ module.exports = {
       'white': '#fff',
       'red': '#e40604',
       'yellow': '#fcbc40',
+      'gray': '#868585',
       'bg-gray': '#2c2c33',
+      'bg-how': '#F6F6F6',
+    
     
 
     },
