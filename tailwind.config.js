@@ -19,8 +19,10 @@ module.exports = {
       'red': '#e40604',
       'yellow': '#fcbc40',
       'gray': '#868585',
-      'bg-gray': '#2c2c33',
+      'bg-gray': '#303030',
       'bg-how': '#F6F6F6',
+      'bg-white': '#fef6f6',
+      'bg-black': '#2C2C2C',
     
     
 
@@ -32,7 +34,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'bodyFont': ['archangelsk', 'regular'],
+        'fontNokia': ['NokiaKokia', 'regular'],
       }
     }
   },

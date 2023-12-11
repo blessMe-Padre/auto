@@ -116,40 +116,46 @@
         <main>
             <h1 class="visually-hidden">Скрытый заголовок</h1>
 
-            <section class="mb-96 main-swiper">
-                <div class="main-wrapper">
-                    <div class="main-item">
+            <section class="main-swiper">
+                <div class="main-wrapper overflow-hidden">
+                    <div class="main-item relative">
+
+                        <div class="swiper-pagination"></div>
+                       
+
+                       
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="relative">
-                                    <img class="absolute top-0 right-0 z-[-10] md:h-auto" src="./src/img/main/bg-slide1.png" alt="">
-                                    <img class="absolute top-1/2 right-0 z-[-10] md:w-96 w-48" src="./src/img/main/japan.png" alt="">
-                                    <img class="absolute top-1/2 right-0 z-20 md:w-[1130px] w-96" src="./src/img/main/oblaco.svg" alt="">
+                            <div class="absolute right-0 md:bottom-52 bottom-0">
+                                <div class="flex flex-col items-center mb-2 bg-bg-gray bg-opacity-50 rounded-md p-2">
+                                    <img src="./src/img/icons/online.svg" alt="">
+                                    <p class="text-white md:text-base text-xs">Аукцион-онлайн</p>
                                 </div>
-                                <div class="container text-5xl md:text-9xl pt-24 relative">
-                                    <h2 class="text-center text-white z-10 font-normal md:text-6xl text-xl uppercase">
-                                        Автомобили <span class="text-yellow">из кореи</span> с доставкой во владивосток
-                                    </h2>
-                                    <p class="pt-10 z-10 text-center font-bold md:text-xl text-base text-white">Подберем под Ваш бюджет, привезем в РФ, растаможим, оформим документы и доставим до Вас</p>
-                                    <div class="relative">
-                                        <img class="absolute right-0 z-10" src="./src/img/main/slide1.png" alt="">
-                                    </div>
-                                    <div class="absolute right-0 bottom-0">
-                                        <div class="flex flex-col items-center mb-2 bg-bg-gray bg-opacity-50 rounded-md p-2">
-                                            <img src="./src/img/icons/online.svg" alt="">
-                                            <p class="text-white md:text-base text-xs">Аукцион-онлайн</p>
-                                        </div>
-                                        <div class="flex flex-col items-center bg-bg-gray bg-opacity-50 rounded-md p-2">
-                                            <img src="./src/img/icons/chat.svg" alt="">
-                                            <p class="text-white md:text-base text-xs">Онлайн-чат</p>
-                                        </div>
-                                    </div>
+                                <div class="flex flex-col items-center bg-bg-gray bg-opacity-50 rounded-md p-2">
+                                    <img src="./src/img/icons/chat.svg" alt="">
+                                    <p class="text-white md:text-base text-xs">Онлайн-чат</p>
                                 </div>
                             </div>
-                            <!-- <div class="swiper-slide">
-                                <div class="relative">
-                                    <img class="absolute top-0 right-0 z-[-10] md:h-auto" src="./src/img/main/bg-slide1.png" alt="">
-                                    <img class="absolute top-1/2 right-0 z-[-10] md:w-96 w-48" src="./src/img/main/japan.png" alt="">
+                            <div class="swiper-slide relative bg-black -z-10 max-h-screen">
+                                <div class="flag relative">
+                                    <img class="absolute top-0 right-0 z-[-10] sm:w-full sm:h-auto" src="./src/img/main/bg-slide1.png" alt="">
+                                    <img class="wheel absolute top-1/2 right-0 z-[-10] md:w-96 w-48" src="./src/img/main/japan.png" alt="">
+                                    <img class="absolute top-1/2 right-0 z-20 md:w-[1130px] w-96" src="./src/img/main/oblaco.svg" alt="">
+                                </div>
+                                <div class="container text-5xl md:text-9xl pt-24 relative ">
+                                    <h2 class="text-center text-white z-10 font-normal md:text-5xl text-xl uppercase">
+                                        Автомобили <span class="text-yellow">из Японии</span> с доставкой во владивосток
+                                    </h2>
+                                    <p class="pt-10 z-10 text-center font-bold md:text-xl text-base text-white">Подберем под Ваш бюджет, привезем в РФ, растаможим, оформим документы и доставим до Вас</p>
+                                    <div class="relative">
+                                        <img class="absolute right-0 z-10" src="./src/img/main/slide1.png" alt="">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-black -z-10">
+                                <div class="flag2 relative">
+                                    <img class="absolute top-0 right-0 z-[-10] md:h-auto" src="./src/img/main/bg-slide2.png" alt="">
+                                    <img class="wheel absolute top-1/2 right-0 z-[-10] md:w-96 w-48" src="./src/img/main/korea.png" alt="">
                                     <img class="absolute top-1/2 right-0 z-20 md:w-[1130px] w-96" src="./src/img/main/oblaco.svg" alt="">
                                 </div>
                                 <div class="container text-5xl md:text-9xl pt-24 relative">
@@ -158,42 +164,33 @@
                                     </h2>
                                     <p class="pt-10 z-10 text-center font-bold md:text-xl text-base text-white">Подберем под Ваш бюджет, привезем в РФ, растаможим, оформим документы и доставим до Вас</p>
                                     <div class="relative">
-                                        <img class="absolute right-0 z-10" src="./src/img/main/slide1.png" alt="">
+                                        <img class="absolute right-0 z-10" src="./src/img/main/slide2.png" alt="">
                                     </div>
-                                    <div class="absolute right-0 bottom-0">
-                                        <div class="flex flex-col items-center mb-2 bg-bg-gray bg-opacity-50 rounded-md p-2">
-                                            <img src="./src/img/icons/online.svg" alt="">
-                                            <p class="text-white md:text-base text-xs">Аукцион-онлайн</p>
-                                        </div>
-                                        <div class="flex flex-col items-center bg-bg-gray bg-opacity-50 rounded-md p-2">
-                                            <img src="./src/img/icons/chat.svg" alt="">
-                                            <p class="text-white md:text-base text-xs">Онлайн-чат</p>
-                                        </div>
-                                    </div>
+                             
                                 </div>
-                            </div> -->
-     
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="japan-swiper pt-96">
+            <section class="japan-swiper pt-40">
                 <div class="container">
 
                     <div class="flex items-center justify-between">
                         <div>
-                           <h2 class="text-xl lg:text-6xl text-jost font-extrabold line uppercase relative">сейчас на аукционах японии </h2>
+                           <h2 class="text-xl lg:text-5xl text-jost font-extrabold line uppercase relative">сейчас на аукционах японии </h2>
                        </div>
    
                        <div class="swiper-pagination"></div>
-                       <div>
+                       <div class="md:flex flex-nowrap gap-5 hidden">
                            <button
-                               class="up japan-prev rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               class="up japan-prev rounded-lg shadow-md shadow-main-black -z-0 ">
                                <img src="./src/img/icons/arrow_prev.svg" alt="влево">
                            </button>
                            <button
-                               class="up japan-next rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               class="up japan-next rounded-lg shadow-md shadow-main-black -z-0 ">
                                <img src="./src/img/icons/arrow_next.svg" alt="вправо" >
                            </button>
                        </div>
@@ -203,104 +200,116 @@
                         <div class="japan-item">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide p-5">
-                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                    <div class="md:w-auto w-full">
                                         <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
                                             <img class="" src="./src/img/cars/car1.png" alt="вправо" >
                                         </a>
-                                        <div class="flex flex-col items-center md:items-start">
-                                            <div>TOYOTA AQUA</div>
-                                            <div class="flex flex-col md:flex-row">
+                                        <div class="flex flex-col items-start gap-4 justify-between">
+                                            <div class="md:text-3xl text-xl font-medium pt-4">TOYOTA AQUA</div>
+                                            <div class="flex flex-row">
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/speed.svg" alt="" >
-                                                    <p class="pr-2">2.0, АКПП, 92 000 км.</p>
+                                                    <img class="pr-1 " src="./src/img/icons/speed.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">2.0, АКПП, 92 000 км.</p>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
-                                                    <p class="pr-2">grey</p>
+                                                    <img class="pr-1 " src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">grey</p>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
-                                                    <p class="pr-2">2012 год</p>
+                                                    <img class="pr-1 " src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">2012 год</p>
                                                 </div>
                                             </div>
-                                            <div class="flex flex-col md:flex-row items-center justify-around">
-                                                <div>
-                                                    <p>937 061 ₽ (673 000 ¥)</p>
-                                                </div>
-                                                <div>
-                                                    <button class="up">Заказать</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>       
-                                <div class="swiper-slide p-5">
-                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
-                                        <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
-                                            <img class="" src="./src/img/cars/car2.png" alt="вправо" >
-                                        </a>
-                                        <div class="flex flex-col items-center md:items-start">
-                                            <div>TOYOTA AQUA</div>
-                                            <div class="flex flex-col md:flex-row">
-                                                <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/speed.svg" alt="" >
-                                                    <p class="pr-2">2.0, АКПП, 92 000 км.</p>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
-                                                    <p class="pr-2">grey</p>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
-                                                    <p class="pr-2">2012 год</p>
-                                                </div>
-                                            </div>
-                                            <div class="flex flex-col md:flex-row items-center justify-around">
-                                                <div>
-                                                    <p>937 061 ₽ (673 000 ¥)</p>
-                                                </div>
-                                                <div>
-                                                    <button class="up">Заказать</button>
-                                                </div>
+                                            <div class="flex flex-row gap-4">
+                                                <p class="md:text-xl text-base">
+                                                    <span class="font-bold">937 061 ₽</span> (673 000 ¥)
+                                                </p>
+                                                <button class="up bg-red py-2 px-5 text-white rounded-lg ">
+                                                    Заказать
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>       
                                 <div class="swiper-slide p-5">
-                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                    <div class="md:w-auto w-full">
                                         <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
-                                            <img class="" src="./src/img/cars/car3.png" alt="вправо" >
+                                            <img class="" src="./src/img/cars/car1.png" alt="вправо" >
                                         </a>
-                                        <div class="flex flex-col items-center md:items-start">
-                                            <div>TOYOTA AQUA</div>
-                                            <div class="flex flex-col md:flex-row">
+                                        <div class="flex flex-col items-start gap-4 justify-between">
+                                            <div class="md:text-3xl text-xl font-medium pt-4">TOYOTA AQUA</div>
+                                            <div class="flex flex-row">
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/speed.svg" alt="" >
-                                                    <p class="pr-2">2.0, АКПП, 92 000 км.</p>
+                                                    <img class="pr-1 " src="./src/img/icons/speed.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">2.0, АКПП, 92 000 км.</p>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
-                                                    <p class="pr-2">grey</p>
+                                                    <img class="pr-1 " src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">grey</p>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
-                                                    <p class="pr-2">2012 год</p>
+                                                    <img class="pr-1 " src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">2012 год</p>
                                                 </div>
                                             </div>
-                                            <div class="flex flex-col md:flex-row items-center justify-around">
-                                                <div>
-                                                    <p>937 061 ₽ (673 000 ¥)</p>
-                                                </div>
-                                                <div>
-                                                    <button class="up">Заказать</button>
-                                                </div>
+                                            <div class="flex flex-row gap-4">
+                                                <p class="md:text-xl text-base">
+                                                    <span class="font-bold">937 061 ₽</span> (673 000 ¥)
+                                                </p>
+                                                <button class="up bg-red py-2 px-5 text-white rounded-lg ">
+                                                    Заказать
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>       
+                                <div class="swiper-slide p-5">
+                                    <div class="md:w-auto w-full">
+                                        <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
+                                            <img class="" src="./src/img/cars/car1.png" alt="вправо" >
+                                        </a>
+                                        <div class="flex flex-col items-start gap-4 justify-between">
+                                            <div class="md:text-3xl text-xl font-medium pt-4">TOYOTA AQUA</div>
+                                            <div class="flex flex-row">
+                                                <div class="flex items-center">
+                                                    <img class="pr-1 " src="./src/img/icons/speed.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">2.0, АКПП, 92 000 км.</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-1 " src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">grey</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img class="pr-1 " src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">2012 год</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-row gap-4">
+                                                <p class="md:text-xl text-base">
+                                                    <span class="font-bold">937 061 ₽</span> (673 000 ¥)
+                                                </p>
+                                                <button class="up bg-red py-2 px-5 text-white rounded-lg ">
+                                                    Заказать
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>       
+                                   
                             </div>
                         </div>
-                    </div>       
+                    </div>   
+                    
+                    <div class="md:hidden flex-nowrap gap-5 flex items-center justify-center">
+                        <button
+                            class="up japan-prev rounded-lg shadow-md shadow-main-black -z-0 ">
+                            <img src="./src/img/icons/arrow_prev.svg" alt="влево">
+                        </button>
+                        <button
+                            class="up japan-next rounded-lg shadow-md shadow-main-black -z-0 ">
+                            <img src="./src/img/icons/arrow_next.svg" alt="вправо" >
+                        </button>
+                    </div>
                 </div>
             </section> 
 
@@ -309,17 +318,17 @@
 
                     <div class="flex items-center justify-between">
                         <div>
-                           <h2 class="text-xl lg:text-6xl text-jost font-extrabold line uppercase relative">Автомобили из Кореи </h2>
+                           <h2 class="text-xl lg:text-5xl text-jost font-extrabold line uppercase relative">Автомобили из Кореи </h2>
                        </div>
    
                        <div class="swiper-pagination"></div>
-                       <div>
+                       <div class="flex flex-nowrap gap-5">
                            <button
-                               class="up korea-prev rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               class="up korea-prev rounded-lg shadow-md shadow-main-black -z-0">
                                <img src="./src/img/icons/arrow_prev.svg" alt="влево" >
                            </button>
                            <button
-                               class="up korea-next rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               class="up korea-next rounded-lg shadow-md shadow-main-black -z-0">
                                <img src="./src/img/icons/arrow_next.svg" alt="вправо" >
                            </button>
                        </div>
@@ -329,123 +338,123 @@
                         <div class="korea-item">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide p-5">
-                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                    <div class="md:w-auto w-full">
                                         <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
                                             <img class="" src="./src/img/cars/car1.png" alt="вправо" >
                                         </a>
-                                        <div class="flex flex-col items-center md:items-start">
-                                            <div>TOYOTA AQUA</div>
-                                            <div class="flex flex-col md:flex-row">
+                                        <div class="flex flex-col items-start gap-4 justify-between">
+                                            <div class="md:text-3xl text-xl font-medium pt-4">TOYOTA AQUA</div>
+                                            <div class="flex flex-row">
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/speed.svg" alt="" >
-                                                    <p class="pr-2">2.0, АКПП, 92 000 км.</p>
+                                                    <img class="pr-1 " src="./src/img/icons/speed.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">2.0, АКПП, 92 000 км.</p>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
-                                                    <p class="pr-2">grey</p>
+                                                    <img class="pr-1 " src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">grey</p>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
-                                                    <p class="pr-2">2012 год</p>
+                                                    <img class="pr-1 " src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">2012 год</p>
                                                 </div>
                                             </div>
-                                            <div class="flex flex-col md:flex-row items-center justify-around">
-                                                <div>
-                                                    <p>937 061 ₽ (673 000 ¥)</p>
-                                                </div>
-                                                <div>
-                                                    <button class="up">Заказать</button>
-                                                </div>
+                                            <div class="flex flex-row gap-4">
+                                                <p class="md:text-xl text-base">
+                                                    <span class="font-bold">937 061 ₽</span> (673 000 ¥)
+                                                </p>
+                                                <button class="up bg-red py-2 px-5 text-white rounded-lg ">
+                                                    Заказать
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
-                                </div>       
+                                </div>    
                                 <div class="swiper-slide p-5">
-                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                    <div class="md:w-auto w-full">
                                         <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
-                                            <img class="" src="./src/img/cars/car2.png" alt="вправо" >
+                                            <img class="" src="./src/img/cars/car1.png" alt="вправо" >
                                         </a>
-                                        <div class="flex flex-col items-center md:items-start">
-                                            <div>TOYOTA AQUA</div>
-                                            <div class="flex flex-col md:flex-row">
+                                        <div class="flex flex-col items-start gap-4 justify-between">
+                                            <div class="md:text-3xl text-xl font-medium pt-4">TOYOTA AQUA</div>
+                                            <div class="flex flex-row">
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/speed.svg" alt="" >
-                                                    <p class="pr-2">2.0, АКПП, 92 000 км.</p>
+                                                    <img class="pr-1 " src="./src/img/icons/speed.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">2.0, АКПП, 92 000 км.</p>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
-                                                    <p class="pr-2">grey</p>
+                                                    <img class="pr-1 " src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">grey</p>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
-                                                    <p class="pr-2">2012 год</p>
+                                                    <img class="pr-1 " src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">2012 год</p>
                                                 </div>
                                             </div>
-                                            <div class="flex flex-col md:flex-row items-center justify-around">
-                                                <div>
-                                                    <p>937 061 ₽ (673 000 ¥)</p>
-                                                </div>
-                                                <div>
-                                                    <button class="up">Заказать</button>
-                                                </div>
+                                            <div class="flex flex-row gap-4">
+                                                <p class="md:text-xl text-base">
+                                                    <span class="font-bold">937 061 ₽</span> (673 000 ¥)
+                                                </p>
+                                                <button class="up bg-red py-2 px-5 text-white rounded-lg ">
+                                                    Заказать
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
-                                </div>       
+                                </div>    
                                 <div class="swiper-slide p-5">
-                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                    <div class="md:w-auto w-full">
                                         <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
-                                            <img class="" src="./src/img/cars/car3.png" alt="вправо" >
+                                            <img class="" src="./src/img/cars/car1.png" alt="вправо" >
                                         </a>
-                                        <div class="flex flex-col items-center md:items-start">
-                                            <div>TOYOTA AQUA</div>
-                                            <div class="flex flex-col md:flex-row">
+                                        <div class="flex flex-col items-start gap-4 justify-between">
+                                            <div class="md:text-3xl text-xl font-medium pt-4">TOYOTA AQUA</div>
+                                            <div class="flex flex-row">
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/speed.svg" alt="" >
-                                                    <p class="pr-2">2.0, АКПП, 92 000 км.</p>
+                                                    <img class="pr-1 " src="./src/img/icons/speed.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">2.0, АКПП, 92 000 км.</p>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
-                                                    <p class="pr-2">grey</p>
+                                                    <img class="pr-1 " src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">grey</p>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
-                                                    <p class="pr-2">2012 год</p>
+                                                    <img class="pr-1 " src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">2012 год</p>
                                                 </div>
                                             </div>
-                                            <div class="flex flex-col md:flex-row items-center justify-around">
-                                                <div>
-                                                    <p>937 061 ₽ (673 000 ¥)</p>
-                                                </div>
-                                                <div>
-                                                    <button class="up">Заказать</button>
-                                                </div>
+                                            <div class="flex flex-row gap-4">
+                                                <p class="md:text-xl text-base">
+                                                    <span class="font-bold">937 061 ₽</span> (673 000 ¥)
+                                                </p>
+                                                <button class="up bg-red py-2 px-5 text-white rounded-lg ">
+                                                    Заказать
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
-                                </div>       
+                                </div>    
                             </div>
                         </div>
                     </div>       
                 </div>
             </section>
 
-             <section class="stock-swiper pt-40">
+             <section class="stock-swiper pt-40 pb-20">
                 <div class="container">
 
                     <div class="flex items-center justify-between">
                         <div>
-                           <h2 class="text-xl lg:text-6xl text-jost font-extrabold line uppercase relative">автомобили в наличии </h2>
+                           <h2 class="text-xl lg:text-5xl text-jost font-extrabold line uppercase relative">автомобили в наличии </h2>
                        </div>
    
                        <div class="swiper-pagination"></div>
-                       <div>
+                       <div class="flex flex-nowrap gap-5">
                            <button
-                               class="up stock-prev rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               class="up stock-prev rounded-lg shadow-md shadow-main-black -z-0">
                                <img src="./src/img/icons/arrow_prev.svg" alt="влево" >
                            </button>
                            <button
-                               class="up stock-next rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               class="up stock-next rounded-lg shadow-md shadow-main-black -z-0">
                                <img src="./src/img/icons/arrow_next.svg" alt="вправо" >
                            </button>
                        </div>
@@ -455,146 +464,148 @@
                         <div class="stock-item">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide p-5">
-                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                    <div class="md:w-auto w-full">
                                         <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
                                             <img class="" src="./src/img/cars/car1.png" alt="вправо" >
                                         </a>
-                                        <div class="flex flex-col items-center md:items-start">
-                                            <div>TOYOTA AQUA</div>
-                                            <div class="flex flex-col md:flex-row">
+                                        <div class="flex flex-col items-start gap-4 justify-between">
+                                            <div class="md:text-3xl text-xl font-medium pt-4">TOYOTA AQUA</div>
+                                            <div class="flex flex-row">
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/speed.svg" alt="" >
-                                                    <p class="pr-2">2.0, АКПП, 92 000 км.</p>
+                                                    <img class="pr-1 " src="./src/img/icons/speed.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">2.0, АКПП, 92 000 км.</p>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
-                                                    <p class="pr-2">grey</p>
+                                                    <img class="pr-1 " src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">grey</p>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
-                                                    <p class="pr-2">2012 год</p>
+                                                    <img class="pr-1 " src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">2012 год</p>
                                                 </div>
                                             </div>
-                                            <div class="flex flex-col md:flex-row items-center justify-around">
-                                                <div>
-                                                    <p>937 061 ₽ (673 000 ¥)</p>
-                                                </div>
-                                                <div>
-                                                    <button class="up">Заказать</button>
-                                                </div>
+                                            <div class="flex flex-row gap-4">
+                                                <p class="md:text-xl text-base">
+                                                    <span class="font-bold">937 061 ₽</span> (673 000 ¥)
+                                                </p>
+                                                <button class="up bg-red py-2 px-5 text-white rounded-lg ">
+                                                    Заказать
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
-                                </div>       
+                                </div>    
                                 <div class="swiper-slide p-5">
-                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                    <div class="md:w-auto w-full">
                                         <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
-                                            <img class="" src="./src/img/cars/car2.png" alt="вправо" >
+                                            <img class="" src="./src/img/cars/car1.png" alt="вправо" >
                                         </a>
-                                        <div class="flex flex-col items-center md:items-start">
-                                            <div>TOYOTA AQUA</div>
-                                            <div class="flex flex-col md:flex-row">
+                                        <div class="flex flex-col items-start gap-4 justify-between">
+                                            <div class="md:text-3xl text-xl font-medium pt-4">TOYOTA AQUA</div>
+                                            <div class="flex flex-row">
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/speed.svg" alt="" >
-                                                    <p class="pr-2">2.0, АКПП, 92 000 км.</p>
+                                                    <img class="pr-1 " src="./src/img/icons/speed.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">2.0, АКПП, 92 000 км.</p>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
-                                                    <p class="pr-2">grey</p>
+                                                    <img class="pr-1 " src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">grey</p>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
-                                                    <p class="pr-2">2012 год</p>
+                                                    <img class="pr-1 " src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">2012 год</p>
                                                 </div>
                                             </div>
-                                            <div class="flex flex-col md:flex-row items-center justify-around">
-                                                <div>
-                                                    <p>937 061 ₽ (673 000 ¥)</p>
-                                                </div>
-                                                <div>
-                                                    <button class="up">Заказать</button>
-                                                </div>
+                                            <div class="flex flex-row gap-4">
+                                                <p class="md:text-xl text-base">
+                                                    <span class="font-bold">937 061 ₽</span> (673 000 ¥)
+                                                </p>
+                                                <button class="up bg-red py-2 px-5 text-white rounded-lg ">
+                                                    Заказать
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
-                                </div>       
+                                </div>    
                                 <div class="swiper-slide p-5">
-                                    <div class="flex flex-col items-center justify-between md:w-auto w-full">
+                                    <div class="md:w-auto w-full">
                                         <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
-                                            <img class="" src="./src/img/cars/car3.png" alt="вправо" >
+                                            <img class="" src="./src/img/cars/car1.png" alt="вправо" >
                                         </a>
-                                        <div class="flex flex-col items-center md:items-start">
-                                            <div>TOYOTA AQUA</div>
-                                            <div class="flex flex-col md:flex-row">
+                                        <div class="flex flex-col items-start gap-4 justify-between">
+                                            <div class="md:text-3xl text-xl font-medium pt-4">TOYOTA AQUA</div>
+                                            <div class="flex flex-row">
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/speed.svg" alt="" >
-                                                    <p class="pr-2">2.0, АКПП, 92 000 км.</p>
+                                                    <img class="pr-1 " src="./src/img/icons/speed.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">2.0, АКПП, 92 000 км.</p>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
-                                                    <p class="pr-2">grey</p>
+                                                    <img class="pr-1 " src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">grey</p>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <img class="pr-2" src="./src/img/icons/color.svg" alt="" >
-                                                    <p class="pr-2">2012 год</p>
+                                                    <img class="pr-1 " src="./src/img/icons/color.svg" alt="" >
+                                                    <p class="md:pr-3 pr-1  md:text-base text-xs">2012 год</p>
                                                 </div>
                                             </div>
-                                            <div class="flex flex-col md:flex-row items-center justify-around">
-                                                <div>
-                                                    <p>937 061 ₽ (673 000 ¥)</p>
-                                                </div>
-                                                <div>
-                                                    <button class="up">Заказать</button>
-                                                </div>
+                                            <div class="flex flex-row gap-4">
+                                                <p class="md:text-xl text-base">
+                                                    <span class="font-bold">937 061 ₽</span> (673 000 ¥)
+                                                </p>
+                                                <button class="up bg-red py-2 px-5 text-white rounded-lg ">
+                                                    Заказать
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
-                                </div>       
+                                </div>        
                             </div>
                         </div>
                     </div>       
                 </div>
             </section>
             
-            <section class="bg-black w-full relative">
+            <section class="bg-black w-full relative pt-20 overflow-hidden">
+                <img class=" md:block hidden absolute -bottom-16 lg:-right-44 md:-right-32 right-0 z-10 wow fadeInRight"  data-wow-delay="0.2s"" src="./src/img/about/car_about.png" alt="" >
+
                 <img class="absolute right-0 top-0" src="./src/img/icons/tree.svg" alt="">
                 <div class="container relative">
                     
-                    <div class="md:p-16 p-4">
-                        <h3 class="text-center text-white font-normal md:text-3xl text-base">
+                    <div class="md:p-16 p-4 bg-bg-gray bg-opacity-80 ">
+                        <h3 class="text-start text-white font-normal md:text-3xl text-base uppercase">
                             Получить расчет автомобиля бесплатно
                         </h3>       
 
                         
-                        <div class="w-full">
-                            <form class="shadow-md rounded p-10 grid grid-cols-1 md:grid-cols-4 gap-4">
+                        <div class="w-full rounded-xl">
+                            <form class=" pt-10 pb-10 grid grid-cols-1 md:grid-cols-4 gap-4 uppercase">
                                 <div class="mb-4">
-                                    <label class="block text-white text-sm font-bold mb-2" for="make">
+                                    <label class="block text-white text-sm font-medium mb-2" for="make">
                                         Выберите марку
                                     </label>
-                                    <select id="1" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-                                        <option>Выберите марку</option>
-                                        <option>Toyota</option>
-                                        <option>Nissan</option>
-                                        <option>Honda</option>
+                                    <select id="1" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                        <option class="text-opacity-10">Выберите марку</option>
+                                        <option class="text-opacity-10">Toyota</option>
+                                        <option class="text-opacity-10">Nissan</option>
+                                        <option class="text-opacity-10">Honda</option>
                                     </select>
                                 </div>
                                 <div class="mb-4">
-                                    <label class="block text-white text-sm font-bold mb-2" for="make">
+                                    <label class="block text-white text-sm font-medium mb-2" for="make">
                                         Выберите модель
                                     </label>
-                                    <select id="2" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-                                        <option>Выберите модель</option>
-                                        <option>Toyota</option>
-                                        <option>Nissan</option>
-                                        <option>Honda</option>
+                                    <select id="2" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                        <option class="text-opacity-10">Выберите модель</option>
+                                        <option class="text-opacity-10">Toyota</option>
+                                        <option class="text-opacity-10">Nissan</option>
+                                        <option class="text-opacity-10">Honda</option>
                                     </select>
                                 </div>
                                 <div class="mb-4">
-                                    <label class="block text-white text-sm font-bold mb-2" for="make">
+                                    <label class="block text-white text-sm font-medium mb-2" for="make">
                                         Выберите вид топлива
                                     </label>
-                                    <select id="3" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                    <select id="3" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                                         <option>Выберите вид топлива</option>
                                         <option>Toyota</option>
                                         <option>Nissan</option>
@@ -602,10 +613,10 @@
                                     </select>
                                 </div>
                                 <div class="mb-4">
-                                    <label class="block text-white text-sm font-bold mb-2" for="make">
+                                    <label class="block text-white text-sm font-medium mb-2" for="make">
                                         Привод
                                     </label>
-                                    <select id="4" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                    <select id="4" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                                         <option>Привод</option>
                                         <option>Toyota</option>
                                         <option>Nissan</option>
@@ -613,10 +624,10 @@
                                     </select>
                                 </div>
                                 <div class="mb-4">
-                                    <label class="block text-white text-sm font-bold mb-2" for="make">
+                                    <label class="block text-white text-sm font-medium mb-2" for="make">
                                         Трансмиссия
                                     </label>
-                                    <select id="5" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                    <select id="5" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                                         <option>Трансмиссия</option>
                                         <option>Toyota</option>
                                         <option>Nissan</option>
@@ -624,10 +635,10 @@
                                     </select>
                                 </div>
                                 <div class="mb-4">
-                                    <label class="block text-white text-sm font-bold mb-2" for="make">
+                                    <label class="block text-white text-sm font-medium mb-2" for="make">
                                         Выберите комплектацию 
                                     </label>
-                                    <select id="6" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                    <select id="6" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                                         <option>Выберите комплектацию</option>
                                         <option>Toyota</option>
                                         <option>Nissan</option>
@@ -635,104 +646,93 @@
                                     </select>
                                 </div>
 
-                                <div class="flex flex-1">
-                                    <div class="mb-4 w-1/2">
-                                        <label class="block text-white text-sm font-bold mb-2" for="make">
-                                            Год 
-                                        </label>
-                                        <select id="7" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-                                            <option>От</option>
-                                            <option>Toyota</option>
-                                            <option>Nissan</option>
-                                            <option>Honda</option>
-                                        </select>
-                                    </div>
-                                    <div class="mb-4 w-1/2">
-                                        <label class="block text-white text-sm font-bold mb-2" for="make">
-                                            Год 
-                                        </label>
-                                        <select id="8" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-                                            <option>До</option>
-                                            <option>Toyota</option>
-                                            <option>Nissan</option>
-                                            <option>Honda</option>
-                                        </select>
+                            
+                                <div class="mb-4">
+                                    <label class="block text-white text-sm font-medium mb-2" for="make">
+                                        Год 
+                                    </label>
+                                    <div class="flex gap-10">
+                                        <div class="w-full">
+                                            <select id="7" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                                <option>от</option>
+                                                <option>2001</option>
+                                                <option>2002</option>
+                                            </select>
+                                        </div>
+                                        <div class="w-full">
+                                            <select id="7" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" > 
+                                                <option>до</option>
+                                                <option>2001</option>
+                                                <option>2002</option>
+                                            </select>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                                 
-                                <div class="flex flex-1">
-                                    <div class="mb-4 w-1/2">
-                                        <label class="block text-white text-sm font-bold mb-2" for="make">
+                                
+                                <div class="flex flex-1 gap-10">
+                                    <div class="mb-4">
+                                        <label class="block text-white text-sm font-medium mb-2" for="make">
                                             Пробег 
                                         </label>
-                                        <select id="make" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-                                            <option>От</option>
-                                            <option>Toyota</option>
-                                            <option>Nissan</option>
-                                            <option>Honda</option>
-                                        </select>
-                                    </div>
-                                    <div class="mb-4 w-1/2">
-                                        <label class="block text-white text-sm font-bold mb-2" for="make">
-                                            Пробег 
-                                        </label>
-                                        <select id="9" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-                                            <option>До</option>
-                                            <option>Toyota</option>
-                                            <option>Nissan</option>
-                                            <option>Honda</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="flex flex-1">
-                                    <div class="mb-4 w-1/2">
-                                        <label class="block text-white text-sm font-bold mb-2" for="make">
-                                            Цена 
-                                        </label>
-                                        <select id="10" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-                                            <option>От</option>
-                                            <option>Toyota</option>
-                                            <option>Nissan</option>
-                                            <option>Honda</option>
-                                        </select>
-                                    </div>
-                                    <div class="mb-4 w-1/2">
-                                        <label class="block text-white text-sm font-bold mb-2" for="make">
-                                            Цена 
-                                        </label>
-                                        <select id="11" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-                                            <option>До</option>
-                                            <option>Toyota</option>
-                                            <option>Nissan</option>
-                                            <option>Honda</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="flex flex-1">
-                                    <div class="mb-4 w-1/2">
-                                        <label class="block text-white text-sm font-bold mb-2" for="make">
-                                            Объем
-                                        </label>
-                                        <select id="12" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-                                            <option>От</option>
-                                            <option>Toyota</option>
-                                            <option>Nissan</option>
-                                            <option>Honda</option>
-                                        </select>
-                                    </div>
-                                    <div class="mb-4 w-1/2">
-                                        <label class="block text-white text-sm font-bold mb-2" for="make">
-                                            Объем
-                                        </label>
-                                        <select id="13" name="make" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-                                            <option>До</option>
-                                            <option>Toyota</option>
-                                            <option>Nissan</option>
-                                            <option>Honda</option>
-                                        </select>
-                                    </div>
-                                </div>
+                                        <div class="flex gap-10">
+                                            <div class="w-1/2">
+                                                <input id="7" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="от">
 
+                                                </input>
+                                            </div>
+                                            <div class="w-1/2">
+                                                <input id="7" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="до">
+
+                                                </input>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex flex-1 gap-10">
+                                    <div class="mb-4">
+                                        <label class="block text-white text-sm font-medium mb-2" for="make">
+                                            Цена 
+                                        </label>
+                                        <div class="flex gap-10">
+                                            <div class="w-1/2">
+                                                <input id="7" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="от">
+
+                                                </input>
+                                            </div>
+                                            <div class="w-1/2">
+                                                <input id="7" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="до">
+
+                                                </input>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-1 gap-10">
+                                    <div class="mb-4">
+                                        <label class="block text-white text-sm font-medium mb-2" for="make">
+                                            Объем 
+                                        </label>
+                                        <div class="flex gap-10">
+                                            <div class="w-1/2">
+                                                <input id="7" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="от">
+
+                                                </input>
+                                            </div>
+                                            <div class="w-1/2">
+                                                <input id="7" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="до">
+
+                                                </input>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
                                 <div class="flex items-center justify-center">
                                     <button class="up bg-red py-2 px-10 text-white rounded-lg">
                                         Получить расчёт
@@ -751,7 +751,8 @@
                         
                     </div>
                     
-                    <div class="relative md:flex items-center">
+                    <div class="relative md:flex items-center pt-36 ">
+                        
                         <div class="w-full md:w-1/2">
                             <h2 class="text-white text-start font-normal md:text-5xl text-xl uppercase pb-10">
                                 О компании
@@ -784,11 +785,10 @@
                                         Предоставляем полный отчет расходов стоимости авто для Вашего понимания за честную комиссию, без скрытых платежей
                                     </li>
                                 </ul>
-                                <img class="absolute right-0 top-10" src="./src/img/icons/quot.svg" alt="">
+                                <img class="absolute right-0 top-10 wow fadeInRight"  data-wow-delay="0.2s"" src="./src/img/icons/quot.svg" alt="">
                             </div>
                         </div>
-                        <img class="md:block hidden absolute -bottom-16 lg:-right-40 md:-right-32 right-0 z-10" src="./src/img/about/car_about.png" alt="" >
-                        <img class="md:hidden block w-full z-10" src="./src/img/about/car_about.png" alt="" >
+                        <img class="md:hidden block w-full z-10 wow fadeInRight"  data-wow-delay="0.2s"" src="./src/img/about/car_about.png" alt="" >
                     </div>
                 </div>
             </section>
@@ -818,28 +818,43 @@
                     <img class="bg-cover bg-center opacity-90 absolute bottom-0 md:hidden block -z-10" src="./src/img/company/bg_company.png" alt="">
                 </div>
                 <div class="container">
-                    <ul class="flex items-center justify-center flex-wrap counter-pointer">
-                        <li class="mr-32 mb-10 ml-6">
+                    <ul class="flex items-center md:justify-center justify-start flex-wrap gap-10 counter-list">
+                        <li>
                             <svg xmlns="http://www.w3.org/2000/svg" width="73" height="4" viewBox="0 0 73 4" fill="none">
                                 <path d="M0 2H72.5" stroke="#FCBC40" stroke-width="4"/>
                             </svg>
-                            <p class="md:text-5xl text-3xl text-yellow uppercase pt-4 pb-4 counter-years">13 </p><span class="md:text-5xl text-3xl text-yellow uppercase pt-4 pb-4">лет</span>
+                            <p
+                                class="font-fontNokia md:text-5xl text-3xl text-yellow uppercase pt-4 pb-4">
+                                <span class="counter-years md:text-5xl text-3xl text-yellow uppercase pt-4 pb-4"></span>
+                                лет
+                            </p>
                             <p class="md:text-xl text-sm text-white">опыт в автомобильной сфере</p>
                         </li>
-                        <li class="mr-32 mb-10 ml-6">
+                        <li>
                             <svg xmlns="http://www.w3.org/2000/svg" width="73" height="4" viewBox="0 0 73 4" fill="none">
                                 <path d="M0 2H72.5" stroke="#FCBC40" stroke-width="4"/>
                             </svg>
-                            <p class="md:text-5xl text-3xl text-yellow uppercase pt-4 pb-4 counter-items">более 1000</p>
+                            <p
+                                class="font-fontNokia md:text-5xl text-3xl text-yellow uppercase pt-4 pb-4">
+                                более
+                                <span class="counter-items md:text-5xl text-3xl text-yellow uppercase pt-4 pb-4"></span>
+                                
+                            </p>
                             <p class="md:text-xl text-sm text-white">единиц ТС в РФ</p>
                         </li>
-                        <li class="mr-32 mb-10 ml-6">
+                        <li>
                             <svg xmlns="http://www.w3.org/2000/svg" width="73" height="4" viewBox="0 0 73 4" fill="none">
                                 <path d="M0 2H72.5" stroke="#FCBC40" stroke-width="4"/>
                             </svg>
-                            <p class="md:text-5xl text-3xl text-yellow uppercase pt-4 pb-4 counter-client">более 8000</p>
+                            <p
+                                class="font-fontNokia md:text-5xl text-3xl text-yellow uppercase pt-4 pb-4">
+                                более
+                                <span class="counter-client md:text-5xl text-3xl text-yellow uppercase pt-4 pb-4"></span>
+                                
+                            </p>
                             <p class="md:text-xl text-sm text-white">довольных клиентов по всей России</p>
                         </li>
+                       
                     </ul>
                 </div>
             </section>
@@ -848,7 +863,7 @@
                 <div class="container">
                     <h2 class=" font-normal md:text-5xl text-xl uppercase pb-8">как купить автомобиль</h2>
                     <div class="pb-10 relative">
-                        <div class="pb-10 flex justify-between items-center">
+                        <!-- <div class="pb-10 flex justify-between items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1444" height="4" viewBox="0 0 1444 4" fill="none">
                                 <path d="M1442 2H2" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 8"/>
                             </svg>
@@ -877,6 +892,20 @@
                                 </clipPath>
                                 </defs>
                             </svg>
+                        </div> -->
+
+                        <div class="car__wrapper">
+                            <div class="car__numbers">
+                                <div class="car__progress relative">
+                                    
+                                    <div class="car__progress-success">
+    
+                                    </div>
+                                    <div class="w-full">
+                                        <img class="car__animate absolute -top-10 left-0" src="./src/img/how_buy/car.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="flex items-stretch justify-center flex-1 flex-wrap gap-7">
@@ -956,17 +985,17 @@
 
                     <div class="flex items-center justify-between">
                         <div>
-                           <h2 class="text-xl lg:text-6xl text-jost font-extrabold line uppercase relative">Отзывы клиентов </h2>
+                           <h2 class="text-xl lg:text-5xl text-jost font-extrabold line uppercase relative">Отзывы клиентов </h2>
                        </div>
    
                        <div class="swiper-pagination"></div>
-                       <div>
+                       <div class="flex flex-nowrap gap-5">
                            <button
-                               class="up review-prev rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               class="up review-prev rounded-lg shadow-md shadow-main-black -z-0">
                                <img src="./src/img/icons/arrow_prev.svg" alt="влево">
                            </button>
                            <button
-                               class="up review-next rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                               class="up review-next rounded-lg shadow-md shadow-main-black -z-0">
                                <img src="./src/img/icons/arrow_next.svg" alt="вправо" >
                            </button>
                        </div>
@@ -1080,12 +1109,12 @@
             <section class="pt-20">
                 <div class="container relative">
                     <div class="flex justify-center">
-                        <img class="bg-cover bg-center opacity-90 absolute bottom-0 -z-10" src="./src/img/map/map.png" alt="" > 
-                        <img class="bg-cover bg-center opacity-90 absolute top-1/3 -z-10" src="./src/img/map/icon.svg" alt="">
+                        <img class="bg-cover bg-center opacity-90 absolute bottom-0 -z-10 md:block hidden" src="./src/img/map/map2.png" alt="" > 
                     </div>
-                    <div class="bg-white max-w-sm ml-10 p-10">
+                    
+                    <div class="bg-white max-w-xl md:ml-10 ml-0 p-10">
                         <div class="pb-5">
-                            <h2 class="text-xl lg:text-6xl text-jost font-extrabold line uppercase relative">Контакты </h2>
+                            <h2 class="text-xl lg:text-5xl text-jost font-extrabold line uppercase relative">Контакты </h2>
                         </div>
                         <ul>
                             <li class="pb-8">
@@ -1116,109 +1145,110 @@
                             </li>
                         </ul>
                     </div>
+                    <img class="bg-cover bg-center opacity-90 h-full w-full md:hidden block" src="./src/img/map/map2.png" alt="" > 
                 </div>
             </section>  
         </main>
 
-        <footer class="footer page-section-3 bg-black pb-10">
-                <img class="m-auto my-10" src="./src/img/logo.svg" alt="Logo">
-            <div class="container flex md:justify-between justify-evenly md:flex-nowrap flex-wrap text-white">
-                <div>
-                    <p class="pb-4">Мы в соц.сетях</p>
-                    <ul class="flex items-center justify-center gap-4">
-                        <li class="pb-8 flex items-center gap-4">
-                            <img src="./src/img/icons_nav/sap.svg" alt="">
-                            <img src="./src/img/icons_nav/tg.svg" alt="">
-                            <img src="./src/img/icons_nav/vk.svg" alt="">
-                            <img src="./src/img/icons_nav/inst.svg" alt="">
-                            <img src="./src/img/icons_nav/youtube.svg" alt="">
-                        </li>  
-                    </ul>
-                </div>
-                <div>
-                    <p class="pb-4">Каталог</p>
-                    <ul class="text-gray md:text-base text-xs">
-                        <li class="pb-8">
-                            Авто с аукционов Японии
-                        </li>  
-                        <li class="pb-8">
-                            Авто с аукционов Кореи
-                        </li>  
-                        <li class="pb-8">
-                            Популярные авто
-                        </li>  
-                        <li class="pb-8">
-                            Авто в наличии
-                        </li>  
-                        <li class="pb-8">
-                            Сейчас на аукционах
-                        </li>  
-                    </ul>
-                </div>
-                <div>
-                    <p class="pb-4">Клиентам</p>
-                    <ul class="text-gray md:text-base text-xs">
-                        <li class="pb-8">
-                            О компании
-                        </li>  
-                        <li class="pb-8">
-                            Отзывы
-                        </li>  
-                        <li class="pb-8">
-                            Доставка
-                        </li>  
-                        <li class="pb-8">
-                            Выполненные заказы
-                        </li>  
-                        <li class="pb-8">
-                            <a href="">
-                                Скачать договор pdf
-                            </a>
-                            
-                        </li>  
-                    </ul>
-                </div>
-                <div>
-                    <p class="pb-4">КОНТАКТЫ</p>
-                    <ul>
-                        <li class="pb-10 pr-8 flex items-center">
-                            <img class="mr-2" src="./src/img/icons_nav/phonw.svg" alt="">
-                            <a href="tel:79020607575">+79020607575, +79020605757</a>
-                        </li>
-                        <li class="pb-10 pr-8 flex items-center">
-                            <img class="mr-2" src="./src/img/icons_nav/email.svg" alt="">
-                            <a href="mailto:Avtopotencial-DV@mail.ru">Avtopotencial-DV@mail.ru</a>
-                        </li>
-                        <li class="pb-10  pr-8 flex items-center max-w-xs">
-                            <img class="mr-2" src="./src/img/icons_nav/geo.svg" alt="">
-                            <p>г.  Владивосток, ул. Тухачевского 35 , 2 этаж, т/ц Тухачевский</p>
-                        </li>
-                        <li class="pb-10 flex items-center">
-                            <img class="mr-2" src="./src/img/icons_nav/clock.svg" alt="">
-                            <p>Пн-Пт 9:00-18:00</p>
-                        </li>
+        <footer class="footer page-section-3 bg-black pb-10 pt-10">
+            <img class="m-auto my-10" src="./src/img/logo.svg" alt="Logo">
+        <div class="container flex md:justify-between justify-evenly md:flex-nowrap flex-wrap text-white">
+            <div>
+                <p class="pb-4">Мы в соц.сетях</p>
+                <ul class="flex items-center justify-center gap-4">
+                    <li class="pb-8 flex items-center gap-4">
+                        <img src="./src/img/icons_nav/sap.svg" alt="">
+                        <img src="./src/img/icons_nav/tg.svg" alt="">
+                        <img src="./src/img/icons_nav/vk.svg" alt="">
+                        <img src="./src/img/icons_nav/inst.svg" alt="">
+                        <img src="./src/img/icons_nav/youtube.svg" alt="">
+                    </li>  
+                </ul>
+            </div>
+            <div>
+                <p class="pb-4">Каталог</p>
+                <ul class="text-gray md:text-base text-xs">
+                    <li class="pb-8">
+                        Авто с аукционов Японии
+                    </li>  
+                    <li class="pb-8">
+                        Авто с аукционов Кореи
+                    </li>  
+                    <li class="pb-8">
+                        Популярные авто
+                    </li>  
+                    <li class="pb-8">
+                        Авто в наличии
+                    </li>  
+                    <li class="pb-8">
+                        Сейчас на аукционах
+                    </li>  
+                </ul>
+            </div>
+            <div>
+                <p class="pb-4">Клиентам</p>
+                <ul class="text-gray md:text-base text-xs">
+                    <li class="pb-8">
+                        О компании
+                    </li>  
+                    <li class="pb-8">
+                        Отзывы
+                    </li>  
+                    <li class="pb-8">
+                        Доставка
+                    </li>  
+                    <li class="pb-8">
+                        Выполненные заказы
+                    </li>  
+                    <li class="pb-8">
+                        <a href="">
+                            Скачать договор pdf
+                        </a>
                         
-                        <li class="">
-                            <button class="bg-red up py-2 px-10 text-white rounded-lg">
-                                Заказать авто
-                            </button>
-                        </li>
-                    </ul>
-                </div>  
+                    </li>  
+                </ul>
             </div>
+            <div>
+                <p class="pb-4">КОНТАКТЫ</p>
+                <ul>
+                    <li class="pb-10 pr-8 flex items-center">
+                        <img class="mr-2" src="./src/img/icons_nav/phonw.svg" alt="">
+                        <a href="tel:79020607575">+79020607575, +79020605757</a>
+                    </li>
+                    <li class="pb-10 pr-8 flex items-center">
+                        <img class="mr-2" src="./src/img/icons_nav/email.svg" alt="">
+                        <a href="mailto:Avtopotencial-DV@mail.ru">Avtopotencial-DV@mail.ru</a>
+                    </li>
+                    <li class="pb-10  pr-8 flex items-center max-w-xs">
+                        <img class="mr-2" src="./src/img/icons_nav/geo.svg" alt="">
+                        <p>г.  Владивосток, ул. Тухачевского 35 , 2 этаж, т/ц Тухачевский</p>
+                    </li>
+                    <li class="pb-10 flex items-center">
+                        <img class="mr-2" src="./src/img/icons_nav/clock.svg" alt="">
+                        <p>Пн-Пт 9:00-18:00</p>
+                    </li>
+                    
+                    <li class="">
+                        <button class="bg-red up py-2 px-10 text-white rounded-lg">
+                            Заказать авто
+                        </button>
+                    </li>
+                </ul>
+            </div>  
+        </div>
 
-            <div class="container">
-                <div class="flex items-center justify-between text-gray pt-10">
-                    <div class="md:text-sm text-xs">
-                        Компания «Автопотенциал-ДВ»
-                    </div>
-                    <a href="" class="md:text-sm text-xs underline">
-                        Политика конфиденциальности
-                    </a>
-                    </div>    
-                </div> 
-            </div>
-        </footer>
+        <div class="container">
+            <div class="flex items-center justify-between text-gray pt-10">
+                <div class="md:text-sm text-xs">
+                    Компания «Автопотенциал-ДВ»
+                </div>
+                <a href="" class="md:text-sm text-xs underline">
+                    Политика конфиденциальности
+                </a>
+                </div>    
+            </div> 
+        </div>
+    </footer>
     <div class="scroll-top">
         <img src="./src/img/" alt="стрелка вверх">
     </div>
