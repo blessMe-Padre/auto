@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Алиса знает, что делать, центр развлечений - это игровое пространство по мотивам мультфильма режиссера Тимура Бекмамбетова">
+    <title>Автопотенциал</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel=" stylesheet" href="css/main.css">
+</head>
+
+<body>
+    
+    <div class="">
+        <header class="border-b-8 z-10 w-full md-28 transition-colors bg-black">
+            <div class="container md:gap-5 items-center justify-between flex md:pt-2">
+
+                <div class="flex items-center justify-center">
+                        <!-- Меню кнопка -->
+                        <button class="btn__menu up rounded-xl shadow-md shadow-main-black items-center gap-10 md:flex hidden">
+                            
+                                <svg viewBox="0 0 64 48">
+                                    <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                                    <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                                    <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                                </svg>
+                            
+                            
+                                <!-- <span class="text-white ">Каталог</span> -->
+                            
+                        </button>
+                        
+                        <div class="menu overflow-hidden ">
+                            <ul class="flex flex-col text-white">
+                                <li class="px-4 mb-4"><a class=" hover:text-green transition-colors nav-link"
+                                        href="#" data-goto="page-section-1">Авто с аукционов Японии</a>
+                                </li>
+                                <li class="px-4 mb-4"><a class=" hover:text-green transition-colors nav-link"
+                                        href="#" data-goto="page-section-2">Авто из Кореи</a></li>
+                                <li class="px-4 mb-4"><a class=" hover:text-green transition-colors nav-link"
+                                        href="#" data-goto="page-section-3">Популярные авто</a></li>
+        
+                                <li class="px-4 mb-4"><a class=" hover:text-green transition-colors nav-link"
+                                        href="#" data-goto="page-section-4">Авто в наличии</a></li>
+        
+
+                            </ul>
+                        </div>
+
+                        <!-- Мобильная кнопка -->
+                        <button class="btn__menu--mobile up bg-red rounded-xl shadow-md shadow-main-black items-center gap-10 md:hidden flex">
+                            
+                                <svg viewBox="0 0 64 48">
+                                    <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                                    <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                                    <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                                </svg>                                                   
+                        </button>
+
+                        <div class="mobile-menu ">
+                            <ul class="flex flex-col text-white">
+                                <li class="px-4 mb-4"><a class=" hover:text-green transition-colors nav-link"
+                                        href="#" data-goto="page-section-1">1</a>
+                                </li>
+                                <li class="px-4 mb-4"><a class=" hover:text-green transition-colors nav-link"
+                                        href="#" data-goto="page-section-2">2</a></li>
+                                <li class="px-4 mb-4"><a class=" hover:text-green transition-colors nav-link"
+                                        href="#" data-goto="page-section-3">3</a></li>
+        
+                                <li class="px-4 mb-4"><a class=" hover:text-green transition-colors nav-link"
+                                        href="#" data-goto="page-section-4">Авто в наличии</a></li>
+        
+
+                            </ul>
+                        </div>
+
+                    
+                        <ul class="gap-2 pl-10 hidden md:flex">
+                            <li class="mr-2"><a class="text-white hover:text-red transition-colors nav-link" href="#"
+                                data-goto=".page-section-1">О компании</a></li>
+                            <li class="mr-2"><a class="text-white hover:text-red transition-colors nav-link" href="#"
+                                data-goto=".page-section-1">О компании</a></li>
+                            <li class="mr-2"><a class="text-white hover:text-red transition-colors nav-link" href="#"
+                                data-goto=".page-section-2">Отзывы</a></li>
+                            <li class="mr-2"><a class="text-white hover:text-red transition-colors nav-link" href="#">Доставка</a></li>
+                        </ul>
+
+
+                </div>
+                
+                <img class="m-auto my-10" src="./src/img/logo.svg" alt="Logo">
+                
+                <ul class="mobile gap-2 flex-wrap text-main-black hidden md:flex items-center justify-center">
+                    <li class="mr-4"><a class="text-white hover:text-red transition-colors nav-link" href="#"
+                            data-goto=".page-section-4">Выполненные заказы</a></li>
+                    <li class="mr-4"><a class="text-white hover:text-red transition-colors nav-link" href="#"
+                            data-goto=".page-section-5">Контакты</a></li>
+                    <li class="mr-4"><a class="text-main-black hover:bg-red transition-colors nav-link" href="#"
+                            data-goto=""><img src="./src/img/icons/sap.svg" alt="" ></a></li>
+                    <li class="mr-4"><a class="text-main-black hover:bg-red transition-colors nav-link" href="#"
+                            data-goto=""><img src="./src/img/icons/tg.svg" alt="" ></a></li>
+                    <li class="mr-4"><a class="text-white hover:bg-red transition-colors nav-link p-5" href="#"
+                            data-goto="">Заказать авто</a></li>
+                    
+                </ul>
+
+                
+            </div>
+        </header>
+
+        <main>
+            <h1 class="visually-hidden">Скрытый заголовок</h1>
+            <section class="py-20">
+                <div class="container">
+                    <div class="absolute right-0 md:bottom-52 bottom-0">
+                        <div class="flex flex-col items-center mb-2 bg-bg-gray bg-opacity-50 rounded-md p-2">
+                            <img src="./src/img/icons/online.svg" alt="">
+                            <p class="text-white md:text-base text-xs">Аукцион-онлайн</p>
+                        </div>
+                        <div class="flex flex-col items-center bg-bg-gray bg-opacity-50 rounded-md p-2">
+                            <img src="./src/img/icons/chat.svg" alt="">
+                            <p class="text-white md:text-base text-xs">Онлайн-чат</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex md:flex-row flex-col items-start justify-start gap-10">
+                        <div class="md:w-1/2 w-full">
+                            <img src="./src/img/card-item/image 8.png" alt="">
+                        </div>
+    
+                        <div class="md:w-1/2 w-full">
+                            <h3 class="font-bold md:text-4xl text-xl">
+                                MAZDA CX-8
+                            </h3>
+                            <div class="flex justify-between items-center pt-10">
+                                <ul>
+                                    <li class="md:text-base text-xs font-semibold pb-5">
+                                        Бренд
+                                    </li>
+                                    <li class="md:text-base text-xs font-semibold pb-5">
+                                        Год выпуска
+                                    </li>
+                                    <li class="md:text-base text-xs font-semibold pb-5">
+                                        Тип кузова
+                                    </li>
+                                    <li class="md:text-base text-xs font-semibold pb-5">
+                                        Тип двигателя
+                                    </li>
+                                    <li class="md:text-base text-xs font-semibold pb-5">
+                                        Объем двигателя
+                                    </li>
+                                    <li class="md:text-base text-xs font-semibold pb-5">
+                                        Аукцион
+                                    </li>
+                                    <li class="md:text-base text-xs font-semibold pb-5">
+                                        Лот
+                                    </li>
+                                    <li class="md:text-base text-xs font-semibold pb-5">
+                                        Цена на аукционе
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="md:text-base text-xs font-semibold pb-5">
+                                        Бренд
+                                    </li>
+                                    <li class="md:text-base text-xs font-semibold pb-5">
+                                        Год выпуска
+                                    </li>
+                                    <li class="md:text-base text-xs font-semibold pb-5">
+                                        Тип кузова
+                                    </li>
+                                    <li class="md:text-base text-xs font-semibold pb-5">
+                                        Тип двигателя
+                                    </li>
+                                    <li class="md:text-base text-xs font-semibold pb-5">
+                                        Объем двигателя
+                                    </li>
+                                    <li class="md:text-base text-xs font-semibold pb-5">
+                                        Аукцион
+                                    </li>
+                                    <li class="md:text-base text-xs font-semibold pb-5">
+                                        Лот
+                                    </li>
+                                    <li class="md:text-base text-xs font-semibold pb-5">
+                                        Цена на аукционе
+                                    </li>
+                                </ul>
+                               
+                                
+                            </div>
+                            <div class="flex flex-row items-center justify-between">
+                                <div class="flex flex-1 gap-5 items-center">
+                                    <p class="font-bold md:text-2xl text-lg">
+                                        1 799 975 ₽
+                                    </p>
+                                    <p class="text-gray md:text-base text-xs">
+                                        *Цена указана в РФ с ПТС
+                                    </p>
+                                </div>
+                                <div>
+                                    <button class="up bg-red py-3 px-10 text-white rounded-lg ">
+                                        Заказать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+          
+            </section>
+            
+
+            <section >
+                <div class="container ">
+                    <h2 class="text-start text-black z-10 font-normal md:text-4xl text-xl uppercase pb-10">
+                        Расшифровка цены
+                    </h2>
+                    <div class="md:w-10/12 w-full bg-bg-white p-10">
+                        <div class="bg-yellow p-2 max-w-max mb-3">
+                            ЛОТ № 12406
+                        </div>
+                        <div class="">
+                            <p class="font-bold md:text-2xl text-base pb-3">
+                                Toyota PRIUS 2019
+                            </p>
+
+                            <p class="">
+                                Аукцион: TAA Yokohama
+                                Дата: 30-09-2023
+                            </p>
+
+                            <p class="">
+                                Окончательная стоимость автомобиля во Владивостоке с ПТС
+                            </p>
+
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="md:w-1/4 w-full">
+                        <div class="bg-black">
+                            <p class="text-white font-medium md:text-xl text-base">Курс валют ЦБ на сегодня:</p>
+                            <div class="flex items-center justify-between p-10">
+                                <ul class="">
+                                    <li class="text-white md:text-">
+                                        JPY/RUB:
+                                    </li> 
+ 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+      
+            
+
+           
+        </main>
+
+        <footer class="footer page-section-3 bg-black pb-10 pt-10">
+                <img class="m-auto my-10" src="./src/img/logo.svg" alt="Logo">
+            <div class="container flex md:justify-between justify-evenly md:flex-nowrap flex-wrap text-white">
+                <div>
+                    <p class="pb-4">Мы в соц.сетях</p>
+                    <ul class="flex items-center justify-center gap-4">
+                        <li class="pb-8 flex items-center gap-4">
+                            <img src="./src/img/icons_nav/sap.svg" alt="">
+                            <img src="./src/img/icons_nav/tg.svg" alt="">
+                            <img src="./src/img/icons_nav/vk.svg" alt="">
+                            <img src="./src/img/icons_nav/inst.svg" alt="">
+                            <img src="./src/img/icons_nav/youtube.svg" alt="">
+                        </li>  
+                    </ul>
+                </div>
+                <div>
+                    <p class="pb-4">Каталог</p>
+                    <ul class="text-gray md:text-base text-xs">
+                        <li class="pb-8">
+                            Авто с аукционов Японии
+                        </li>  
+                        <li class="pb-8">
+                            Авто с аукционов Кореи
+                        </li>  
+                        <li class="pb-8">
+                            Популярные авто
+                        </li>  
+                        <li class="pb-8">
+                            Авто в наличии
+                        </li>  
+                        <li class="pb-8">
+                            Сейчас на аукционах
+                        </li>  
+                    </ul>
+                </div>
+                <div>
+                    <p class="pb-4">Клиентам</p>
+                    <ul class="text-gray md:text-base text-xs">
+                        <li class="pb-8">
+                            О компании
+                        </li>  
+                        <li class="pb-8">
+                            Отзывы
+                        </li>  
+                        <li class="pb-8">
+                            Доставка
+                        </li>  
+                        <li class="pb-8">
+                            Выполненные заказы
+                        </li>  
+                        <li class="pb-8">
+                            <a href="">
+                                Скачать договор pdf
+                            </a>
+                            
+                        </li>  
+                    </ul>
+                </div>
+                <div>
+                    <p class="pb-4">КОНТАКТЫ</p>
+                    <ul>
+                        <li class="pb-10 pr-8 flex items-center">
+                            <img class="mr-2" src="./src/img/icons_nav/phonw.svg" alt="">
+                            <a href="tel:79020607575">+79020607575, +79020605757</a>
+                        </li>
+                        <li class="pb-10 pr-8 flex items-center">
+                            <img class="mr-2" src="./src/img/icons_nav/email.svg" alt="">
+                            <a href="mailto:Avtopotencial-DV@mail.ru">Avtopotencial-DV@mail.ru</a>
+                        </li>
+                        <li class="pb-10  pr-8 flex items-center max-w-xs">
+                            <img class="mr-2" src="./src/img/icons_nav/geo.svg" alt="">
+                            <p>г.  Владивосток, ул. Тухачевского 35 , 2 этаж, т/ц Тухачевский</p>
+                        </li>
+                        <li class="pb-10 flex items-center">
+                            <img class="mr-2" src="./src/img/icons_nav/clock.svg" alt="">
+                            <p>Пн-Пт 9:00-18:00</p>
+                        </li>
+                        
+                        <li class="">
+                            <button class="bg-red up py-2 px-10 text-white rounded-lg">
+                                Заказать авто
+                            </button>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+
+            <div class="container">
+                <div class="flex items-center justify-between text-gray pt-10">
+                    <div class="md:text-sm text-xs">
+                        Компания «Автопотенциал-ДВ»
+                    </div>
+                    <a href="" class="md:text-sm text-xs underline">
+                        Политика конфиденциальности
+                    </a>
+                    </div>    
+                </div> 
+            </div>
+        </footer>
+    <div class="scroll-top">
+        <img src="./src/img/" alt="стрелка вверх">
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/baguettebox.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

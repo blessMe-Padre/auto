@@ -8,6 +8,9 @@
 @import './block/menu.css';
 @import './block/swiper.css';
 @import './block/scrool-top.css';
+@import './block/select.css';
+@import './block/animate.css';
+@import './block/car-animate.css';
 
 /* Импорт TailWind */
 @tailwind base;
@@ -16,8 +19,16 @@
 
 /* Зарегистрируйте пользовательское семейство шрифтов и сообщите браузеру, где его найти. */
 @font-face {
-    font-family: 'archangelsk';
-    src: url('../src/fonts/archangelsk.ttf');
+    font-family: 'Noto Sans';
+    src: url('../src/fonts/NotoSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NokiaKokia';
+    src: url('../src/fonts/NokiaKokia\(RYS\ BY\ LYAJKA\).ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -30,10 +41,21 @@
     }
 
     body {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         color: #262626;
         background: linear-gradient(166deg, #FFF 5.27%, rgba(255, 255, 255, 0.00) 78.75%);
         font-weight: 400;
+    }
+
+    h2, h3 {
+        font-family: 'NokiaKokia';
+        line-height: 85px;
+    }
+
+    span.counter-items,
+    span.counter-client,
+    span.counter-years {
+        font-family: 'NokiaKokia';
     }
 }
 

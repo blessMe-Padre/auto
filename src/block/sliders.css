@@ -38,14 +38,22 @@
 
 .swiper-pagination {
     position: absolute;
+    z-index: 1000;
     top: -10px;
 }
 
 .swiper-pagination-bullet {
-    width: 16px;
+    width: 100px;
     height: 16px;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #fff;
+    background-color: red;
 }
+
+
+.swiper-pagination-bullet {
+    background-color: white; 
+  }
+
+

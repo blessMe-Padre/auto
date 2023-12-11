@@ -9,6 +9,8 @@ import { initStockSlider } from "./module/stock-slider.js";
 import { initReviewsSlider } from "./module/reviews-slider.js";
 import { initMainSlider } from "./module/main-slider.js";
 import { initCounterAnimation } from "./module/counter-animation.js";
+import { initObserver } from "./module/observer.js";
+import { initObserverAbout } from "./module/observerAbout.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -26,5 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initReviewsSlider();
     initCounterAnimation();
     initMainSlider();
+    initObserver();
+    initObserverAbout();
 
 });
