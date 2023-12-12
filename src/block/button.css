@@ -1,33 +1,10 @@
-.button {
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: rgba(255, 255, 255, 0.60);
-    border: 1px solid #f2f2f2;
+.up {
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 
-.button.is-active {
-    background-color: #5278DA;
-    color: #ffffff;
+.up:hover {
+  box-shadow: inset 0 -3.25em 0 0 #fcbc40;
 }
 
-.up::before {
-    content: "";
-    position: absolute;
-    background: rgb(255, 0, 0);
-    transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease;
-    border-radius: 50%;
-    z-index: 0;
-    transform: translate(-50%, -50%);
-  }
-
-  .up:hover::before {
-    width: 0;
-    height: 0;
-    top: 50%;
-    left: 50%;
-  }
