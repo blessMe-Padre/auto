@@ -11,6 +11,9 @@ import { initMainSlider } from "./module/main-slider.js";
 import { initCounterAnimation } from "./module/counter-animation.js";
 import { initObserver } from "./module/observer.js";
 import { initObserverAbout } from "./module/observerAbout.js";
+import { initPopup } from "./module/popup.js";
+import { initFinishedSlider } from "./module/finished-slider.js";
+import { initStickyHeader } from "./module/sticky-header.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -30,5 +33,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initMainSlider();
     initObserver();
     initObserverAbout();
+    initPopup();
+    initFinishedSlider();
+    initStickyHeader();
 
 });

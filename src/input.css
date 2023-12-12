@@ -11,6 +11,9 @@
 @import './block/select.css';
 @import './block/animate.css';
 @import './block/car-animate.css';
+@import './block/card__list.css';
+@import './block/popup.css';
+@import './block/form';
 
 /* Импорт TailWind */
 @tailwind base;
@@ -106,4 +109,10 @@
     .hero-bg img {
         display: none;
     }
+}
+
+.header-fix {
+    /* background: rgba(20, 19, 19, 0.8); */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+    padding-bottom: 10px;
 }
