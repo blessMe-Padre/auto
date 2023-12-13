@@ -14,6 +14,9 @@ import { initObserverAbout } from "./module/observerAbout.js";
 import { initPopup } from "./module/popup.js";
 import { initFinishedSlider } from "./module/finished-slider.js";
 import { initStickyHeader } from "./module/sticky-header.js";
+import { initSum } from "./module/calculator.js";
+import { initCurrency } from "./module/currency.js";
+import { initCardItemSlider } from "./module/card-item-slider.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -36,5 +39,9 @@ window.addEventListener('DOMContentLoaded', () => {
     initPopup();
     initFinishedSlider();
     initStickyHeader();
+    initSum();
+    initCurrency();
+    initCardItemSlider();
+    
 
 });
