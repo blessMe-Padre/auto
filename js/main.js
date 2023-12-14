@@ -1,5 +1,5 @@
 import { initNav } from "./module/nav.js";
-import { initSlider } from "./module/sliders.js";
+// import { initSlider } from "./module/sliders.js";
 import { initCurrentYear } from "./module/current-year.js";
 import { initScrollToTop } from "./module/scroll-to-top.js";
 import { initScroll } from "./module/scroll.js";
@@ -16,14 +16,15 @@ import { initFinishedSlider } from "./module/finished-slider.js";
 import { initStickyHeader } from "./module/sticky-header.js";
 import { initSum } from "./module/calculator.js";
 import { initCurrency } from "./module/currency.js";
-import { initCardItemSlider } from "./module/card-item-slider.js";
+// import { initCardItemSlider } from "./module/card-item-slider.js";
+import { initSlider1} from './module/card-item-slider.js';
 
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('подключен скрипт main.js');
 
     initNav();
-    initSlider();
+    // initSlider();
     initCurrentYear();
     initScrollToTop();
     initScroll();
@@ -41,7 +42,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initStickyHeader();
     initSum();
     initCurrency();
-    initCardItemSlider();
+    // initCardItemSlider();
+    initSlider1();
     
 
 });
