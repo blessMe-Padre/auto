@@ -64,7 +64,7 @@ export const initSum = () => {
         return value + acc;
       }, 0);
   
-      // inputsСustoms.textContent = totalCustomsSum.toFixed(2)
+      inputsСustoms.textContent = totalCustomsSum.toFixed(2)
       console.log(inputsСustoms.value)
 
     }
