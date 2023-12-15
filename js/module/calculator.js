@@ -34,26 +34,18 @@ export const initSum = () => {
       eurItemList.textContent = `${EURValue}`;
       const coefEUR = parseFloat(eurItemList.textContent / 100);
 
+      
       const sum = document.getElementById('sum');
+      const inputsСustoms = document.getElementById('priceСustoms');
+      const inputsPayment = document.getElementById('pricePayment');
+
       const inputs = document.querySelectorAll('.price');
-      const inputsDollar = document.querySelectorAll('.dollar__price');
-
-      const inputsСustoms = document.querySelector('.priceСustoms');
-      let totalCustomsSum = 0;
-
       const partInputsСustoms = document.querySelectorAll('.partCustoms');
-      partInputsСustoms.forEach(item => {
-        totalCustomsSum = [...item].reduce((acc, input) => {
-          const value = parseFloat(input.value.replace(/\s/g, '')) || 0
-          return value + acc;
-        }, 0)
-        inputsСustoms.textContent = totalCustomsSum.toFixed(2)
-      })
+      const partInputsPayment = document.querySelectorAll('.partPayment');
+      const inputsDollar = document.querySelectorAll('.dollar__price');
+      
+      
 
- 
-
-      // const inputsPayment = document.querySelector('.pricePayment');
-      // const partInputsPayment = document.querySelectorAll('.partPayment');
 
       inputsDollar.forEach(input => {
         const value =  parseInt(input.value);
@@ -62,17 +54,43 @@ export const initSum = () => {
       });
 
 
-    let totalSum = 0; 
+    let totalCustomsSum = 0
 
-    
+      
 
-  
-    const updateTotalSum = () => {
-      totalSum = [...inputs, ...inputsDollar, ...inputsСustoms].reduce((acc, input) => {
+    const updateTotalCustomsSum = () => {
+      totalCustomsSum = [...partInputsСustoms].reduce((acc, input) => {
         const value = parseFloat(input.value.replace(/\s/g, '')) || 0;
         return value + acc;
       }, 0);
+  
+      // inputsСustoms.textContent = totalCustomsSum.toFixed(2)
+      console.log(inputsСustoms.value)
 
+    }
+  
+    const totalPaymentsSum = 0;
+
+    const updateTotalPaymentSum = () => {
+      const partInputsPayment = document.querySelectorAll('.partPayment');
+      totalPaymentsSum = [...partInputsPayment].reduce((acc, input) => {
+        const value = parseFloat(input.value.replace(/\s/g, '')) || 0;
+        return value + acc;
+      }, 0);
+      inputsPayment = document.querySelector('.pricePayment');
+      inputsPayment.textContent = totalPaymentsSum.toFixed(2);
+      console.log(inputsPayment.textContent);
+    }
+    
+
+
+    let totalSum = 0; 
+    const updateTotalSum = () => {
+      totalSum = [...inputs, ...inputsDollar, ...partInputsPayment, ...partInputsСustoms].reduce((acc, input) => {
+        const value = parseFloat(input.value.replace(/\s/g, '')) || 0;
+        return value + acc;
+      }, 0);
+    
       sum.textContent = totalSum.toFixed(2);
     };
 
@@ -80,6 +98,16 @@ export const initSum = () => {
     inputs.forEach(input => {
         input.addEventListener('input', updateTotalSum); 
         input.addEventListener('change', updateTotalSum); 
+    });
+
+    partInputsСustoms.forEach(input => {
+        input.addEventListener('input', updateTotalCustomsSum); 
+        input.addEventListener('change', updateTotalCustomsSum); 
+    });
+
+    partInputsPayment.forEach(input => {
+        input.addEventListener('input', updateTotalPaymentSum); 
+        input.addEventListener('change', updateTotalPaymentSum); 
     });
 
 
