@@ -1,8 +1,7 @@
-
 export const initFetchCars = () => {
     console.log('Working...')
     // Запрашиваем данные с помощью fetch
-    fetch('js/data.js')
+    fetch('js/japan.js')
     .then(response => {
         // Проверяем, успешно ли выполнен запрос
         if (!response.ok) {
@@ -21,70 +20,63 @@ export const initFetchCars = () => {
         // Проходимся по каждой модели автомобиля данного бренда
         user.models.forEach(mod => {
             model += "<option data-id=\"" + user.name + "\">" + mod.name + "</option>";
+            
         });
         });
 
         // Заполняем выпадающие списки на странице данными
         document.getElementById('model').innerHTML = model;
         document.getElementById('brand').innerHTML = brand;
-        document.getElementById('brand-modal').innerHTML = brand;
-        document.getElementById('model-modal').innerHTML = model;
-        document.getElementById('reviews_brand').innerHTML = brand;
-        document.getElementById('reviews_model').innerHTML = model;
-
 
         showModelsForBrand("AC");
+        
 
-    })
-    .catch(error => {
-        console.log('There was a problem with the fetch operation:', error.message);
-    });
+        })
 
-    function showModelsForBrand(brandName) {
-        let options = document.querySelectorAll('option[data-id]');
-        options.forEach(option => {
-            option.hidden = true;
+        document.getElementById("brand").addEventListener('change', function () {
+            let value = this.value;
+            let relevantModels = document.querySelectorAll('option[data-id="' + value + '"]');
+            console.log(relevantModels)
+            let modelSelect = document.getElementById('model');
+           
+            // Отвечает за добавление в option новых моделей,в нем же удаление тех, которые не соот.
+            Array.from(relevantModels).forEach(model => {
+                modelSelect.appendChild(model.cloneNode(true));
+                model.removeAttribute('hidden');
+            });
+
+            // Фиксит баг с отображением моделей после определенного числа
+            // Array.from(modelSelect.options).forEach(model => {
+                
+            //     if (!relevantModels.includes(model)) {
+            //         modelSelect.innerHTML = ''
+                    
+            //         model.remove();
+            //     }
+            // });
+
+            // Отображение первой модели соот
+            let firstVisibleModel = modelSelect.querySelector('option:not([hidden])');
+            if (firstVisibleModel) {
+                firstVisibleModel.selected = true;  
+                
+            };
+            showModelsForBrand(value); 
         });
-        let relevantModels = document.querySelectorAll('option[data-id="' + brandName + '"]');
-        relevantModels.forEach(model => {
-            model.hidden = false;
-        });
-    }
 
-    document.getElementById("brand").addEventListener('change', function () {
-        let value = this.value;
-        let relevantModels = document.querySelectorAll('option[data-id="' + value + '"]');
-        let modelSelect = document.getElementById('model');
-        modelSelect.innerHTML = "";
-        Array.from(relevantModels).forEach(model => {
-            modelSelect.appendChild(model.cloneNode(true));
-            model.removeAttribute('hidden');
-        });
-        // modelSelect.querySelector('option:not([hidden]):first').selected = true;
-    });
-    
 
-    // document.getElementById("reviews_brand").addEventListener('change', function () {
-    //     let value = this.value;
-    //     let relevantModels = document.querySelectorAll('option[data-id="' + value + '"]');
-    //     let modelSelect = document.getElementById('reviews_model');
-    //     modelSelect.innerHTML = "";
-    //     Array.from(relevantModels).forEach(model => {
-    //         modelSelect.appendChild(model.cloneNode(true));
-    //         model.removeAttribute('hidden');
-    //     });
-    //     modelSelect.querySelector('option:not([hidden]):first').selected = true;
-    // });
 
-    // document.getElementById("brand-modal").addEventListener('change', function () {
-    //     let value = this.value;
-    //     let relevantModels = document.querySelectorAll('option[data-id="' + value + '"]');
-    //     let modelSelect = document.getElementById('model-modal');
-    //     modelSelect.innerHTML = "";
-    //     Array.from(relevantModels).forEach(model => {
-    //         modelSelect.appendChild(model.cloneNode(true));
-    //         model.removeAttribute('hidden');
-    //     });
-    //     modelSelect.querySelector('option:not([hidden]):first').selected = true;
-    // });
+
+        function showModelsForBrand(brandname) {
+            let options = document.querySelectorAll('option[data-id]');
+            console.log(options)
+            options.forEach(option => {
+              option.hidden = true;
+            });
+          
+            let relevantModels = document.querySelectorAll('option[data-id="' + brandname + '"]');
+            relevantModels.forEach(model => {
+              model.hidden = false;
+            });
+          }
 }

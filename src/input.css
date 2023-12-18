@@ -14,6 +14,7 @@
 @import './block/card__list.css';
 @import './block/popup.css';
 @import './block/form';
+@import './block/sliders.css';
 
 /* Импорт TailWind */
 @tailwind base;

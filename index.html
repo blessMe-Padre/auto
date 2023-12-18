@@ -672,7 +672,7 @@
                                     <label class="block text-white text-sm font-medium mb-2" for="make">
                                         Выберите марку
                                     </label>
-                                    <select id="manufacturer" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                    <select name="brand" id="brand" class="select input block appearance-none w-full border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                                         <option class="text-opacity-10">Выберите марку</option>
                                         <option class="text-opacity-10"></option>
                                     </select>
@@ -681,7 +681,7 @@
                                     <label class="block text-white text-sm font-medium mb-2" for="make">
                                         Выберите модель
                                     </label>
-                                    <select id="model" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                    <select id="model" name="make" class="select input block appearance-none w-full  border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                                         <option class="text-opacity-10">Выберите модель</option>
                                         <option class="text-opacity-10"></option>
                                     </select>
@@ -690,9 +690,13 @@
                                     <label class="block text-white text-sm font-medium mb-2" for="make">
                                         Выберите вид топлива
                                     </label>
-                                    <select id="fuel" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                    <select id="fuel" name="make" class="select input block appearance-none w-full  border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                                         <option>Выберите вид топлива</option>
-                                        <option></option>
+                                        <option>Бензин</option>
+                                        <option>Дизель</option>
+                                        <option>Газ</option>
+                                        <option>Электричество</option>
+                                        <option>Гибрид</option>
 
                                     </select>
                                 </div>
@@ -700,18 +704,23 @@
                                     <label class="block text-white text-sm font-medium mb-2" for="make">
                                         Привод
                                     </label>
-                                    <select id="drive" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                    <select id="drive" name="make" class="select input block appearance-none w-full  border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                                         <option>Привод</option>
-                                        <option></option>
+                                        <option>4WD</option>
+                                        <option>Задний</option>
+                                        <option>Передний</option>
                                     </select>
                                 </div>
                                 <div class="mb-4">
                                     <label class="block text-white text-sm font-medium mb-2" for="make">
                                         Трансмиссия
                                     </label>
-                                    <select id="transmition" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                    <select id="transmition" name="make" class="select input block appearance-none w-full  border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                                         <option>Трансмиссия</option>
-                                        <option></option>
+                                        <option>АКПП</option>
+                                        <option>Робот</option>
+                                        <option>Вариантор</option>
+                                        <option>Механика</option>
 
                                     </select>
                                 </div>
@@ -719,7 +728,7 @@
                                     <label class="block text-white text-sm font-medium mb-2" for="make">
                                         Выберите комплектацию 
                                     </label>
-                                    <select id="complectation" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                    <select id="complectation" name="make" class="select input block appearance-none w-full  border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                                         <option>Выберите комплектацию</option>
                                         <option></option>
                                     </select>
@@ -732,17 +741,59 @@
                                     </label>
                                     <div class="flex gap-10">
                                         <div class="w-full">
-                                            <select id="year" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                            <select id="year" name="make" class="select input block appearance-none w-full  border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                                                 <option>от</option>
                                                 <option>2001</option>
                                                 <option>2002</option>
+                                                <option>2003</option>
+                                                <option>2004</option>
+                                                <option>2005</option>
+                                                <option>2006</option>
+                                                <option>2007</option>
+                                                <option>2008</option>
+                                                <option>2009</option>
+                                                <option>2010</option>
+                                                <option>2011</option>
+                                                <option>2012</option>
+                                                <option>2013</option>
+                                                <option>2014</option>
+                                                <option>2015</option>
+                                                <option>2016</option>
+                                                <option>2017</option>
+                                                <option>2018</option>
+                                                <option>2019</option>
+                                                <option>2020</option>
+                                                <option>2021</option>
+                                                <option>2022</option>
+                                                <option>2023</option>
                                             </select>
                                         </div>
                                         <div class="w-full">
-                                            <select id="year" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" > 
+                                            <select id="year" name="make" class="select input block appearance-none w-full  border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" > 
                                                 <option>до</option>
                                                 <option>2001</option>
                                                 <option>2002</option>
+                                                <option>2003</option>
+                                                <option>2004</option>
+                                                <option>2005</option>
+                                                <option>2006</option>
+                                                <option>2007</option>
+                                                <option>2008</option>
+                                                <option>2009</option>
+                                                <option>2010</option>
+                                                <option>2011</option>
+                                                <option>2012</option>
+                                                <option>2013</option>
+                                                <option>2014</option>
+                                                <option>2015</option>
+                                                <option>2016</option>
+                                                <option>2017</option>
+                                                <option>2018</option>
+                                                <option>2019</option>
+                                                <option>2020</option>
+                                                <option>2021</option>
+                                                <option>2022</option>
+                                                <option>2023</option>
                                             </select>
                                         </div>
                                         
@@ -757,12 +808,12 @@
                                         </label>
                                         <div class="flex gap-10">
                                             <div class="w-1/2">
-                                                <input id="mileage" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="от">
+                                                <input id="mileage" name="make" class="select input block appearance-none w-full  border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="от">
 
                                                 </input>
                                             </div>
                                             <div class="w-1/2">
-                                                <input id="7" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="до">
+                                                <input id="7" name="make" class="select input block appearance-none w-full  border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="до">
 
                                                 </input>
                                             </div>
@@ -778,12 +829,12 @@
                                         </label>
                                         <div class="flex gap-10">
                                             <div class="w-1/2">
-                                                <input id="price" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="от">
+                                                <input id="price" name="make" class="select input block appearance-none w-full  border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="от">
 
                                                 </input>
                                             </div>
                                             <div class="w-1/2">
-                                                <input id="price" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="до">
+                                                <input id="price" name="make" class="select input block appearance-none w-full  border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="до">
 
                                                 </input>
                                             </div>
@@ -798,12 +849,12 @@
                                         </label>
                                         <div class="flex gap-10">
                                             <div class="w-1/2">
-                                                <input id="value" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="от">
+                                                <input id="value" name="make" class="select input block appearance-none w-full  border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="от">
 
                                                 </input>
                                             </div>
                                             <div class="w-1/2">
-                                                <input id="value" name="make" class="select block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="до">
+                                                <input id="value" name="make" class="select input block appearance-none w-full  border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="до">
 
                                                 </input>
                                             </div>
