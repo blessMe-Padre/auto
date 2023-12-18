@@ -1919,12 +1919,12 @@ span.counter-items,
   right: -13rem;
 }
 
-.-top-10{
-  top: -2.5rem;
+.-top-0{
+  top: -0px;
 }
 
-.-top-24{
-  top: -6rem;
+.-top-10{
+  top: -2.5rem;
 }
 
 .bottom-0{
@@ -2009,10 +2009,6 @@ span.counter-items,
 
 .z-10{
   z-index: 10;
-}
-
-.z-\[-10\]{
-  z-index: -10;
 }
 
 .order-1{
@@ -2199,16 +2195,16 @@ span.counter-items,
   max-width: max-content;
 }
 
+.max-w-md{
+  max-width: 28rem;
+}
+
 .max-w-xl{
   max-width: 36rem;
 }
 
 .max-w-xs{
   max-width: 20rem;
-}
-
-.max-w-md{
-  max-width: 28rem;
 }
 
 .flex-1{
@@ -2707,6 +2703,12 @@ span.counter-items,
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-colors{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2840,6 +2842,10 @@ span.counter-items,
 
   .md\:-right-32{
     right: -8rem;
+  }
+
+  .md\:-top-24{
+    top: -6rem;
   }
 
   .md\:bottom-52{
@@ -2981,6 +2987,11 @@ span.counter-items,
   .md\:py-40{
     padding-top: 10rem;
     padding-bottom: 10rem;
+  }
+
+  .md\:py-44{
+    padding-top: 11rem;
+    padding-bottom: 11rem;
   }
 
   .md\:py-60{
