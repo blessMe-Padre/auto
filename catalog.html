@@ -62,41 +62,41 @@
                         <div class="mobile-menu ">
                             <div class="container flex md:justify-between justify-evenly md:flex-nowrap flex-wrap text-white">
                                 <div>
-                                    <p class="pb-4">Каталог</p>
+                                    <p class="pb-2">Каталог</p>
                                     <ul class="text-gray md:text-base text-xs">
-                                        <li class="pb-8">
-                                            <a href="">Авто с аукционов Японии</a>
+                                        <li class="pb-4">
+                                            <a href="catalog.html">Авто с аукционов Японии</a>
                                         </li>  
-                                        <li class="pb-8">
-                                            <a href="">Авто с аукционов Кореи</a>
+                                        <li class="pb-4">
+                                            <a href="catalog.html">Авто с аукционов Кореи</a>
                                         </li>  
-                                        <li class="pb-8">
-                                            <a href="">Популярные авто</a>
+                                        <li class="pb-4">
+                                            <a href="catalog.html">Популярные авто</a>
                                         </li>  
-                                        <li class="pb-8">
-                                            <a href="">Авто в наличии</a>
+                                        <li class="pb-4">
+                                            <a href="catalog.html">Авто в наличии</a>
                                         </li>  
-                                        <li class="pb-8">
-                                            <a href="">Сейчас на аукционах</a>
+                                        <li class="pb-4">
+                                            <a href="catalog.html">Сейчас на аукционах</a>
                                         </li>  
                                     </ul>
                                 </div>
                                 <div>
-                                    <p class="pb-4">Клиентам</p>
+                                    <p class="pb-2">Клиентам</p>
                                     <ul class="text-gray md:text-base text-xs">
-                                        <li class="pb-8">
-                                            <a href="#">О компании</a>
+                                        <li class="pb-4">
+                                            <a href="index.html">О компании</a>
                                         </li>  
-                                        <li class="pb-8">
-                                            <a href="">Отзывы</a>
+                                        <li class="pb-4">
+                                            <a href="reviews.html">Отзывы</a>
                                         </li>  
-                                        <li class="pb-8">
-                                            <a href="">Доставка</a>
+                                        <li class="pb-4">
+                                            <a href="order.html">Доставка</a>
                                         </li>  
-                                        <li class="pb-8">
-                                            <a href="">Выполненные заказы</a>
+                                        <li class="pb-4">
+                                            <a href="finished.html">Выполненные заказы</a>
                                          </li>  
-                                        <li class="pb-8">
+                                        <li class="pb-4">
                                         <a href="#">
                                             Скачать договор pdf
                                         </a>
@@ -116,22 +116,22 @@
                                     </ul>
                                 </div>
                            
-                                <div>
+                                <div class="text-xs">
                                     <p class="pb-4">КОНТАКТЫ</p>
                                     <ul>
-                                        <li class="pb-10 pr-8 flex items-center">
+                                        <li class="pb-4 pr-8 flex items-center">
                                             <img class="mr-2" src="./src/img/icons_nav/phonw.svg" alt="">
                                             <a href="tel:79020607575">+79020607575, +79020605757</a>
                                         </li>
-                                        <li class="pb-10 pr-8 flex items-center">
+                                        <li class="pb-4 pr-8 flex items-center">
                                             <img class="mr-2" src="./src/img/icons_nav/email.svg" alt="">
                                             <a href="mailto:Avtopotencial-DV@mail.ru">Avtopotencial-DV@mail.ru</a>
                                         </li>
-                                        <li class="pb-10  pr-8 flex items-center max-w-xs">
+                                        <li class="pb-4  pr-8 flex items-center max-w-xs">
                                             <img class="mr-2" src="./src/img/icons_nav/geo.svg" alt="">
                                             <p>г.  Владивосток, ул. Тухачевского 35 , 2 этаж, т/ц Тухачевский</p>
                                         </li>
-                                        <li class="pb-10 flex items-center">
+                                        <li class="pb-4 flex items-center">
                                             <img class="mr-2" src="./src/img/icons_nav/clock.svg" alt="">
                                             <p>Пн-Пт 9:00-18:00</p>
                                         </li>
@@ -173,8 +173,8 @@
                             data-goto=""><img class="bg-bg-gray p-2 rounded-md up" src="./src/img/icons/sap.svg" alt="" ></a></li>
                     <li class="mr-4"><a class="text-main-black hover:bg-red transition-colors nav-link" href="#"
                             data-goto=""><img class="bg-bg-gray p-2 rounded-md up" src="./src/img/icons/tg.svg" alt="" ></a></li>
-                    <a class="text-white up nav-link bg-bg-gray p-2 rounded-md up" href="#"
-                            data-goto="">Заказать авто</a>
+                            <a class="text-white up bg-bg-gray p-2 rounded-md up popup-link"
+                            href="#popup1">Заказать авто</a>
                     
                 </ul>
 
@@ -185,7 +185,7 @@
         <main>
             <h1 class="visually-hidden">Скрытый заголовок</h1>
 
-                <!-- <div class="container bg-black w-full">
+                <div class="container bg-black w-full">
                     <div>
                         <ul>
                             
@@ -197,7 +197,7 @@
                             </li>
                         </ul>
                     </div>
-                </div> -->
+                </div>
             
     
       
@@ -220,18 +220,15 @@
                         </h2>      
 
                         <div class="flex flex-wrap items-start justify-start gap-10 pb-10">
-                            <button class="up py-3 px-8 text-white rounded-md text-opacity-50 bg-bg-gray">
+                            <a href="#" class="up py-3 px-8 text-white rounded-md text-opacity-50 bg-bg-gray">
                                 Авто с аукционов
-                            </button>
-                            <button class="up py-3 px-8 text-white rounded-md text-opacity-50 bg-bg-gray">
+                            </a>
+                            <a href="#" class="up py-3 px-8 text-white rounded-md text-opacity-50 bg-bg-gray">
                                 Авто из Кореи
-                            </button>
-                            <button class="up py-3 px-8 text-white rounded-md text-opacity-50 bg-bg-gray">
-                                Популярные авто
-                            </button>
-                            <button class="up py-3 px-8 text-white rounded-md text-opacity-50 bg-bg-gray">
+                            </a>
+                            <a href="#" class="up py-3 px-8 text-white rounded-md text-opacity-50 bg-bg-gray">
                                 Авто в наличии
-                            </button>
+                            </a>
                         </div>
 
                         <div class="md:p-16 p-4 bg-bg-gray bg-opacity-80 ">
@@ -595,6 +592,49 @@
                         </div>
                     </div>
                 </section>
+                
+
+                <section id="popup1" class="popup">
+                    <div class="popup__body">
+                        <div class="popup__content">
+                            <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                                    <path d="M4 1.45508L19.9099 17.365" stroke="#FCBC40"/>
+                                    <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#FCBC40"/>
+                                    </svg>
+                            </button>
+                            <h2 class="text-start text-white z-10 font-normal md:text-4xl text-xl uppercase pb-10 ">Заказать авто</h2>
+                            <div class="flex items-center justify-between pb-10">
+                                <div>
+                                    <p class="text-white md:text-base text-sm">MAZDA CX-8</p>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-yellow font-bold md:text-xl text-sm">1 799 975 ₽</p>
+                                </div>
+                            </div>
+            
+                            <div class="form-wrapper">
+                                <form action="#" id="form" class="form validate-form flex-col">
+                                    <div class="form__item">
+                                        <input id="formName" type="text" name="name" class="form__input _req w-full"
+                                            placeholder="Ваше имя">
+                                    </div>
+            
+                                    <div class="form__item">
+                                        <input id="formPhone" type="tel" name="phone" class="form__input _req w-full"
+                                            placeholder="Ваш телефон">
+                                    </div>
+            
+                                    <button type="submit" class="form__button button bg-red up py-2 px-10 w-full text-white rounded-lg md:text-base text-sm">Заказать авто</button>
+                                </form>
+                            </div>
+                            <p class="form-section__descriptions w-full">Нажимая кнопку “Получить консультацию” я даю согласие на <a
+                                    class="underline" href="#" target="_blank" rel="noopener noreferrer">обработку персональных
+                                    данных</a></p>
+                        </div>
+                    </div>
+                </section>
 
            
         </main>
@@ -700,13 +740,13 @@
                 </div> 
             </div>
         </footer>
-    <div class="scroll-top">
-        <img src="./src/img/icons/arrow.svg" alt="стрелка вверх">
-    </div>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/baguettebox.js"></script>
-    <script type="module" src="js/main.js"></script>
+        <div class="scroll-top">
+            <img src="./src/img/icons/arrow.svg" alt="стрелка вверх">
+        </div>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/baguettebox.js"></script>
+        <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
