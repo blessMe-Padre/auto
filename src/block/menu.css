@@ -1,11 +1,12 @@
 .mobile-menu {
+    margin: 10px;
     background-color: rgba(44, 44, 44, 0.9);
     transition: opacity 0.8s ease;
     opacity: 0;
     visibility: hidden;
-
+    border-radius: 6px;
     position: fixed;
-    top: 20%;
+    top:10%;
     left: 0%;
     padding: 20px;
     overflow: auto;
@@ -25,7 +26,7 @@
     visibility: hidden;
 
     position: fixed;
-    top: 80px;
+    top: 105px;
     left: 20px;
     padding: 20px;
 }
@@ -34,4 +35,11 @@
     opacity: 1;
     visibility: visible;
     z-index: 999;
+}
+
+
+@media (min-width:767px) {
+    .mobile-menu {
+
+    }
 }

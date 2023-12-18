@@ -7,6 +7,13 @@
 }
 
 
+
+.swiper-slide:hover * {
+    color: white; 
+    transition: color 0.4s ease-in-out; 
+}
+
+
 .swiper-button-wrapper {
     display: block;
     position: relative;

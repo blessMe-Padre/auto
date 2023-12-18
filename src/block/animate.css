@@ -45,3 +45,18 @@
       opacity: 1; 
     }
   }
+
+  .animate:hover {
+    background-color: rgba(48, 48, 48, 0.80);
+    border-radius: 6px;
+    /* backdrop-filter: blur(15px); */
+    transition: all 0.4s ease-in-out;
+    
+}
+
+
+
+.animate:hover * {
+    color: white; 
+    transition: color 0.4s ease-in-out; 
+}
