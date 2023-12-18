@@ -12,10 +12,12 @@ export const initPopup = () => {
         for (let index = 0; index < popupLinks.length; index++) {
             
             const popupLink = popupLinks[index];
+            console.log(popupLink)
             popupLink.addEventListener("click", function (e) {
                 const popupName = popupLink.getAttribute('href').replace('#', '');
-                const curentPopup = document.getElementById(popupName);
-                popupOpen(curentPopup);
+                const currentPopup = document.getElementById(popupName);
+                console.log(currentPopup)
+                popupOpen(currentPopup);
                 e.preventDefault();
                 
             });

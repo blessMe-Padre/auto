@@ -16,7 +16,7 @@
 
 <body>
     
-    <div class="">
+    <div class="wrapper">
         <header class="border-b-8 z-10 w-full md-28 transition-colors bg-black fixed py-4">
             <div class="container md:gap-5 items-center justify-between flex md:pt-2">
 
@@ -574,7 +574,7 @@
                                 <div class="swiper-slide p-5">
                                     <div class="md:w-auto w-full">
                                         <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
-                                            <img class="" src="./src/img/cars/car1.png" alt="вправо" >
+                                            <img class="" src="./src/img/cars/car2.png" alt="вправо" >
                                         </a>
                                         <div class="flex flex-col items-start gap-4 justify-between">
                                             <div class="md:text-3xl text-xl font-medium pt-4">TOYOTA AQUA</div>
@@ -606,7 +606,7 @@
                                 <div class="swiper-slide p-5">
                                     <div class="md:w-auto w-full">
                                         <a href="#" class="bg-green md:rounded-lg rounded-2xl shadow-md shadow-main-black p-2 right-5 md:bottom-6 bottom-2">
-                                            <img class="" src="./src/img/cars/car1.png" alt="вправо" >
+                                            <img class="" src="./src/img/cars/car3.png" alt="вправо" >
                                         </a>
                                         <div class="flex flex-col items-start gap-4 justify-between">
                                             <div class="md:text-3xl text-xl font-medium pt-4">TOYOTA AQUA</div>
@@ -1315,20 +1315,20 @@
                 <div>
                     <p class="pb-4">Каталог</p>
                     <ul class="text-gray md:text-base text-xs">
-                        <li class="pb-8">
-                            <a href="catalog.html">с аукционов Японии</a>
+                        <li class="pb-8 hover:text-red transition-all">
+                            <a href="catalog.html">С аукционов Японии</a>
                         </li>
                     
-                        <li class="pb-8">
-                            <a href="catalog.html"> с аукционов Кореи</a>
+                        <li class="pb-8 hover:text-red transition-all">
+                            <a href="catalog.html"> С аукционов Кореи</a>
                         </li>  
-                        <li class="pb-8">
+                        <!-- <li class="pb-8 hover:text-red transition-all">
                             <a href="catalog.html">Популярные авто</a>
+                        </li>   -->
+                        <li class="pb-8 hover:text-red transition-all">
+                            <a href="catalog.html">В наличии</a> 
                         </li>  
-                        <li class="pb-8">
-                            <a href="catalog.html">в наличии</a> 
-                        </li>  
-                        <li class="pb-8">
+                        <li class="pb-8 hover:text-red transition-all">
                             <a href="catalog.html">Сейчас на аукционах</a>
                         </li>  
                     </ul>
@@ -1336,19 +1336,19 @@
                 <div>
                     <p class="pb-4">Клиентам</p>
                     <ul class="text-gray md:text-base text-xs">
-                        <li class="pb-8">
-                            О компании
+                        <li class="pb-8 hover:text-red transition-all">
+                            <a href="#">О компании</a> 
                         </li>  
-                        <li class="pb-8">
-                            Отзывы
+                        <li class="pb-8 hover:text-red transition-all">
+                            <a href="reviews.html">Отзывы</a>
                         </li>  
-                        <li class="pb-8">
-                            Доставка
+                        <li class="pb-8 hover:text-red transition-all">
+                            <a href="order.html">Доставка</a>
                         </li>  
-                        <li class="pb-8">
-                            Выполненные заказы
+                        <li class="pb-8 hover:text-red transition-all">
+                            <a href="finished.html">Выполненные заказы</a>
                         </li>  
-                        <li class="pb-8">
+                        <li class="pb-8 hover:text-red transition-all">
                             <a href="">
                                 Скачать договор pdf
                             </a>
@@ -1377,9 +1377,9 @@
                         </li>
                         
                         <li class="">
-                            <button class="bg-red up py-2 px-10 text-white rounded-lg">
+                            <a class="bg-red up py-2 px-10 text-white rounded-lg popup-link" href="#popup1">
                                 Заказать авто
-                            </button>
+                            </a>
                         </li>
                     </ul>
                 </div>  
